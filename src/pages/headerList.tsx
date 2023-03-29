@@ -1,9 +1,5 @@
 import { HomePage } from "@components/HomePage";
-
-export type Nav = {
-  key: string;
-  label: string;
-};
+import { Nav } from "@src/types/nav";
 
 export const headerList: Nav[] = [
   { key: "home", label: "Home" },

@@ -1,10 +1,5 @@
+import { Tab } from "@src/types/tab";
 import { Dispatch, SetStateAction } from "react";
-
-export type Tab = {
-  key: string;
-  label: string;
-  children: React.ReactNode;
-};
 
 interface ICustomTabProps {
   tab: Tab;
@@ -17,14 +12,14 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
 
   return (
     <div
-      className={`cursor-pointer bg-[#F8F8F8] flex py-5 items-center justify-center gap-3 w-[30%] ${
-        isSelected && "bg-[#ECECEC]"
+      className={`cursor-pointer flex py-5 items-center justify-center gap-3 w-[30%] ${
+        isSelected ? "bg-[#ECECEC]" : "bg-[#F8F8F8]"
       }`}
       onClick={() => setCurrentTab(tab.key)}
     >
       <div
-        className={`w-12 h-12 rounded-full bg-white flex items-center justify-center ${
-          isSelected && "bg-[#D9D9D9]"
+        className={`w-12 h-12 rounded-full flex items-center justify-center ${
+          isSelected ? "bg-[#D9D9D9]" : "bg-white"
         }`}
       >
         {tab.key}
