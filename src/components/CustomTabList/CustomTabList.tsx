@@ -11,7 +11,7 @@ const CustomTabList = ({ tabList }: ICustomTabListProps) => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-between gap-7">
+      <div className="flex justify-between gap-7 mb-[2.125rem]">
         {tabList.map((tab) => (
           <CustomTab
             tab={tab}

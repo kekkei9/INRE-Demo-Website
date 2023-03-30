@@ -8,7 +8,7 @@ const bookingList: Booking[] = [
     title: "Background verification",
     description:
       "Assuring your capital is in safe hands, we provide detailed verification reports of the project and developer. These are customized and detailed...",
-    price: "INR 3000/Project",
+    price: "INR 3000 / Project",
   },
   {
     imgSrc: "/assets/home/booking/img_2.png",
@@ -45,11 +45,11 @@ export const tabList: Tab[] = [
   {
     key: "2",
     label: "Post-Booking & Pre-Registration",
-    children: <div>tab2</div>,
+    children: <BookingListComponent bookingList={bookingList} />,
   },
   {
     key: "3",
     label: "Post-Registration ",
-    children: <div>tab3</div>,
+    children: <BookingListComponent bookingList={bookingList} />,
   },
 ];

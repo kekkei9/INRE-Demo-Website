@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
-import { Nav } from "@pages/headerList";
 import { TopNavList } from "@components/TopNavList";
+import { Nav } from "@src/types/nav";
 
 interface IHeaderComponentProps {
   navList: Nav[];
@@ -18,7 +18,7 @@ const Header = ({ navList, nav, setNav }: IHeaderComponentProps) => {
       <div className="self-end">
         <TopNavList navList={navList} nav={nav} setNav={setNav} />
       </div>
-      <button>Register Now</button>
+      <button className="primary">Register Now</button>
     </div>
   );
 };

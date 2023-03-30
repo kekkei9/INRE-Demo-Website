@@ -1,9 +1,11 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Booking } from "@src/types/booking";
 import Image from "next/image";
 
 const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
   return (
-    <div className="p-6 flex flex-col">
+    <div className="p-6 flex flex-col rounded-[0.625rem] shadow-[0_0_0_4px_rgba(0,0,0,0.3)]">
       <div>
         <Image
           src={imgSrc}
@@ -13,11 +15,14 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
           className="w-full h-auto"
         />
       </div>
-      <div>{title}</div>
-      <div>{description}</div>
-      <div className="flex justify-between">
-        <button>Contact us</button>
-        <div>{price}</div>
+      <div className="mt-[1.875rem] text-[1.75rem] font-bold">{title}</div>
+      <div className="mt-5 text-base">{description}</div>
+      <div className="flex justify-between mt-5 items-center">
+        <button className="flex items-center gap-2">
+          <div>Contact Us</div>
+          <FontAwesomeIcon icon={faArrowRight} />
+        </button>
+        <div className="text-[1.125rem] font-semibold">{price}</div>
       </div>
     </div>
   );

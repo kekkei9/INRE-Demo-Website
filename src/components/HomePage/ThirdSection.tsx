@@ -36,8 +36,10 @@ const blogList: Blog[] = [
 ];
 
 const ThirdSection = () => (
-  <div className="px-[14.25rem]">
-    <BeginSection label="Blogs" />
+  <div className="px-[14.25rem] bg-[#F1F1F1] py-[3.4375rem]">
+    <div className="mb-9">
+      <BeginSection label="Blogs" />
+    </div>
     <BlogCardList blogList={blogList} />
   </div>
 );

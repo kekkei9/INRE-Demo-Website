@@ -27,7 +27,7 @@ const personList: Person[] = [
 
 const SecondSection = () => {
   return (
-    <div className="px-[14.25rem] mt-9 flex flex-col items-center">
+    <div className="px-[14.25rem] mt-9 flex flex-col items-center pb-9">
       <BeginSection label="Our Offerings" />
       <div className="my-5 font-semibold">
         <span>
@@ -37,7 +37,9 @@ const SecondSection = () => {
         <a className="underline text-[#0A009B] cursor-pointer">Click Here</a>
       </div>
       <CustomTabList tabList={tabList} />
-      <BeginSection label="Our Team Members" />
+      <div className="mt-9 mb-4">
+        <BeginSection label="Our Team Members" />
+      </div>
       <PersonCardList personList={personList} />
     </div>
   );

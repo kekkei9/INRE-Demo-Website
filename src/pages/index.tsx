@@ -15,7 +15,7 @@ export default function Home() {
       <div className="mt-28">
         {contentList[nav as keyof typeof contentList]}
       </div>
-      <Footer />
+      <Footer setNav={setNav} />
     </>
   );
 }
