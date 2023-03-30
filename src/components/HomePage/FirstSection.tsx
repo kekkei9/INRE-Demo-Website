@@ -17,7 +17,7 @@ const FirstSection = () => {
               className="filter invert sepia-0 saturate-0 hue-rotate(199deg) brightness-[1.04] contrast-[1.07]"
             />
           </div>
-          <div className="w-[20rem] mt-[2.375rem] text-4xl text-white capitalize">
+          <div className="w-[20rem] mt-[2.375rem] text-4xl text-white capitalize font-['Solway']">
             <span>making your </span>
             <span className="text-[#FAFF00] font-bold">real estate </span>
             <span>purchase journey faster and transparent</span>

@@ -1,3 +1,4 @@
+import { Footer } from "@components/Footer";
 import { HeaderComponent } from "@components/Header";
 import Image from "next/image";
 import { useState } from "react";
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="mt-28">
         {contentList[nav as keyof typeof contentList]}
       </div>
+      <Footer />
     </>
   );
 }

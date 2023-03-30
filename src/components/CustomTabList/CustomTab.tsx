@@ -12,7 +12,7 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
 
   return (
     <div
-      className={`cursor-pointer flex py-5 items-center justify-center gap-3 w-[30%] ${
+      className={`cursor-pointer flex py-5 items-center justify-center gap-3 flex-1 ${
         isSelected ? "bg-[#ECECEC]" : "bg-[#F8F8F8]"
       }`}
       onClick={() => setCurrentTab(tab.key)}

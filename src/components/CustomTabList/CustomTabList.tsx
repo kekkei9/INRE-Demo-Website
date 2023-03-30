@@ -1,5 +1,6 @@
+import { Tab } from "@src/types/tab";
 import { useState } from "react";
-import CustomTab, { Tab } from "./CustomTab";
+import CustomTab from "./CustomTab";
 
 interface ICustomTabListProps {
   tabList: Tab[];
@@ -10,7 +11,7 @@ const CustomTabList = ({ tabList }: ICustomTabListProps) => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-around">
+      <div className="flex justify-between gap-7">
         {tabList.map((tab) => (
           <CustomTab
             tab={tab}
