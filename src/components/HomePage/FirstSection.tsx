@@ -9,7 +9,7 @@ const FirstSection = () => {
         className="flex justify-between items-center"
         style={{ backgroundColor: "var(--primary-color)" }}
       >
-        <div className="ml-[3.375rem]">
+        <div className="ml-[3.375rem] flex-1">
           <div>
             <Image
               src={"/assets/logo.svg"}
@@ -19,24 +19,24 @@ const FirstSection = () => {
               className="filter invert sepia-0 saturate-0 hue-rotate(199deg) brightness-[1.04] contrast-[1.07]"
             />
           </div>
-          <div className="mt-[2.375rem] text-[2.5rem] text-white capitalize font-['Solway']">
+          <div className="mt-[2.375rem] text-3xl 2xl:text-[2.5rem] text-white capitalize font-['Solway']">
             <span>making your </span>
-            <span className="text-[#FAFF00] font-bold text-5xl">
+            <span className="text-[#FAFF00] font-bold text-4xl 2xl:text-5xl">
               real estate{" "}
             </span>
             <span>purchase journey faster and transparent</span>
           </div>
         </div>
-        <div className="flex-shrink-0">
+        <div className="relative aspect-[2/1] h-full flex-[2_2_0%]">
           <Image
             src={"/assets/home/img_1.png"}
             alt="home_1"
-            width={1024.5}
-            height={510}
+            fill={true}
+            className="object-contain"
           />
         </div>
       </div>
-      <div className="bg-[#F1F1F1] mt-9 py-[1.125rem] px-[1.6875rem] flex items-center">
+      <div className="bg-[#F1F1F1] mt-9 py-[1.125rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[2.125rem]">
         <div className="flex-shrink-0">
           <Image
             src={"/assets/home/img_2.png"}
@@ -45,7 +45,7 @@ const FirstSection = () => {
             height={373}
           />
         </div>
-        <div className="ml-[2.125rem]">
+        <div>
           <div className="text-[2.125rem] font-bold">Who We Are</div>
           <div className="mt-5 opacity-60">
             The Indian real estate sector is resilient despite global headwinds.

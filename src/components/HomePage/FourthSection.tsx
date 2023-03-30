@@ -34,7 +34,7 @@ const formList: FormElem[] = [
 const FourthSection = () => (
   <div className="px-[13.5rem] pt-9 pb-[4.1875rem]">
     <div
-      className="flex px-16 py-[3.6875rem] justify-between"
+      className="flex px-16 py-[3.6875rem] justify-between items-center"
       style={{ boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.07)" }}
     >
       <div>
@@ -51,7 +51,7 @@ const FourthSection = () => (
           <button className="primary w-[21.875rem]">Submit</button>
         </div>
       </div>
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 hidden xl:block">
         <Image
           src="/assets/home/Happy announcement-pana.png"
           alt="Happy announcement-pana"

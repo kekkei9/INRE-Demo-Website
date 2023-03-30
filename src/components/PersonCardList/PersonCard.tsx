@@ -10,13 +10,12 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
       className="p-6 flex flex-col rounded-[0.625rem]"
       style={{ boxShadow: "0px 4px 61px rgba(0, 0, 0, 0.16)" }}
     >
-      <div>
+      <div className="relative aspect-[5/4]">
         <Image
           src={imgSrc}
           alt="person img"
-          width={400}
-          height={400}
-          className="w-full h-auto max-h-[19.9375rem]"
+          fill={true}
+          className="object-contain"
         />
       </div>
       <div className="mt-5 text-[1.625rem] font-semibold">{name}</div>
