@@ -28,7 +28,7 @@ export const tabList: Tab[] = [
   {
     key: "1",
     label: "Pre-Booking",
-    children: <BookingCardList bookingList={bookingList} />,
+    children: <BookingCardList bookingList={bookingList.slice(0, 2)} />,
   },
   {
     key: "2",

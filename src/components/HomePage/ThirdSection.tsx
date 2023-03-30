@@ -2,7 +2,7 @@ import { BeginSection } from "@components/BeginSection";
 import { Blog } from "@src/types/blog";
 import { BlogCardList } from "@components/BlogCardList";
 
-const blogList: Blog[] = [
+export const blogList: Blog[] = [
   {
     imgSrc: "/assets/home/blogs/img_1.png",
     address: "Real Estate, Analysis",
@@ -36,7 +36,7 @@ const blogList: Blog[] = [
 ];
 
 const ThirdSection = () => (
-  <div className="px-[14.25rem] bg-[#F1F1F1] py-[3.4375rem]">
+  <div className="px-10 lg:px-[14.25rem] bg-[#F1F1F1] py-[3.4375rem]">
     <div className="mb-9">
       <BeginSection label="Blogs" />
     </div>

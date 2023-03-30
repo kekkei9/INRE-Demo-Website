@@ -18,7 +18,7 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
       onClick={() => setCurrentTab(tab.key)}
     >
       <div
-        className={`w-12 h-12 rounded-full flex items-center justify-center ${
+        className={`w-12 h-12 rounded-full hidden xl:flex items-center justify-center ${
           isSelected ? "bg-[#D9D9D9]" : "bg-white"
         }`}
       >

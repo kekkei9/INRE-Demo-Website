@@ -1,3 +1,4 @@
+import { NavData } from "@context/NavData";
 import {
   faFacebook,
   faInstagram,
@@ -11,14 +12,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useContext } from "react";
 
-const Footer = ({ setNav }: { setNav: Dispatch<SetStateAction<string>> }) => {
+const Footer = () => {
+  const { setNav } = useContext(NavData);
+
   return (
     <div className="px-[8.25rem] py-8 bg-[#01244A] text-white">
       <div className="flex justify-between font-bold">
         <div>
-          <div>
+          <div className="hidden sm:block">
             <Image
               src={"/assets/logo.svg"}
               alt="logo"
@@ -28,13 +31,13 @@ const Footer = ({ setNav }: { setNav: Dispatch<SetStateAction<string>> }) => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="hidden lg:flex flex-col gap-6">
           <div className="text-[1.875rem]">Company</div>
           <div onClick={() => setNav("home")}>Home</div>
           <div onClick={() => setNav("team")}>Our Team</div>
           <div onClick={() => setNav("contact")}>Contact Us</div>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <div className="text-[1.875rem] mb-4">Useful Link</div>
           <div onClick={() => setNav("blogs")}>Blogs</div>
         </div>
@@ -62,7 +65,7 @@ const Footer = ({ setNav }: { setNav: Dispatch<SetStateAction<string>> }) => {
           <span>Copyright 2023. Designed by </span>
           <span className="font-bold">INRE Global</span>
         </div>
-        <div className="flex gap-[0.875rem] font-bold">
+        <div className="hidden lg:flex gap-[0.875rem] font-bold">
           <div className="flex gap-[0.875rem] items-center">
             <FontAwesomeIcon icon={faLinkedinIn} />
             <div>LinkedIn</div>

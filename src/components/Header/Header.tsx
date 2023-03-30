@@ -5,18 +5,16 @@ import { Nav } from "@src/types/nav";
 
 interface IHeaderComponentProps {
   navList: Nav[];
-  nav: string;
-  setNav: Dispatch<SetStateAction<string>>;
 }
 
-const Header = ({ navList, nav, setNav }: IHeaderComponentProps) => {
+const Header = ({ navList }: IHeaderComponentProps) => {
   return (
     <div className="flex justify-between items-center h-full">
       <div>
         <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
       </div>
       <div className="self-end">
-        <TopNavList navList={navList} nav={nav} setNav={setNav} />
+        <TopNavList navList={navList} />
       </div>
       <button className="primary">Register Now</button>
     </div>

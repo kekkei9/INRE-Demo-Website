@@ -1,4 +1,8 @@
 import { HomePage } from "@components/HomePage";
+import BlogSection from "@components/HomePage/BlogSection";
+import ContactSection from "@components/HomePage/ContactSection";
+import OfferingSection from "@components/HomePage/OfferingSection";
+import { TeamTab } from "@components/HomePage/TeamSection.tsx";
 import { Nav } from "@src/types/nav";
 
 export const headerList: Nav[] = [
@@ -11,8 +15,8 @@ export const headerList: Nav[] = [
 
 export const contentList = {
   home: <HomePage />,
-  offerings: <div>Our Offerings</div>,
-  team: <div>Our Team</div>,
-  contact: <div>Contact</div>,
-  blogs: <div>Blogs</div>,
+  offerings: <OfferingSection isInTab />,
+  team: <TeamTab />,
+  contact: <ContactSection />,
+  blogs: <BlogSection />,
 };

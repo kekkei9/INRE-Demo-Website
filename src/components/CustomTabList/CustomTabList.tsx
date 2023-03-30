@@ -4,10 +4,11 @@ import CustomTab from "./CustomTab";
 
 interface ICustomTabListProps {
   tabList: Tab[];
+  initialTab?: string;
 }
 
-const CustomTabList = ({ tabList }: ICustomTabListProps) => {
-  const [currentTab, setCurrentTab] = useState(tabList[0].key);
+const CustomTabList = ({ tabList, initialTab }: ICustomTabListProps) => {
+  const [currentTab, setCurrentTab] = useState(initialTab || tabList[0].key);
 
   return (
     <div className="w-full">

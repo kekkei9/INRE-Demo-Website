@@ -31,8 +31,8 @@ const formList: FormElem[] = [
   },
 ];
 
-const FourthSection = () => (
-  <div className="px-[13.5rem] pt-9 pb-[4.1875rem]">
+const ContactSection = () => (
+  <div className="px-10 lg:px-[13.5rem] pt-9 pb-[4.1875rem]">
     <div
       className="flex px-16 py-[3.6875rem] justify-between items-center"
       style={{ boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.07)" }}
@@ -42,16 +42,16 @@ const FourthSection = () => (
           Get In Touch With Us To Connect
         </div>
         <div className="mt-7 font-semibold">Contact Us</div>
-        <div className="flex flex-wrap gap-y-7 gap-x-6 mt-7">
+        <div className="flex flex-wrap gap-y-7 gap-x-6 mt-7 justify-center 2xl:justify-start">
           {formList.map((formData) => (
             <CustomInputBox key={formData.name} {...formData} />
           ))}
         </div>
-        <div className="mt-7">
-          <button className="primary w-[21.875rem]">Submit</button>
+        <div className="mt-7 flex flex-col items-center 2xl:justify-start">
+          <button className="primary w-[15rem] sm:w-[21.875rem]">Submit</button>
         </div>
       </div>
-      <div className="flex-shrink-0 hidden xl:block">
+      <div className="flex-shrink-0 hidden 2xl:block">
         <Image
           src="/assets/home/Happy announcement-pana.png"
           alt="Happy announcement-pana"
@@ -63,4 +63,4 @@ const FourthSection = () => (
   </div>
 );
 
-export default FourthSection;
+export default ContactSection;
