@@ -12,7 +12,7 @@ const TopNav = ({ navElem, nav, setNav }: ITopNavListProps) => {
 
   return (
     <div className="cursor-pointer" onClick={() => setNav(navElem.key)}>
-      <div className="text-lg font-bold px-5">{navElem.label}</div>
+      <div className="font-bold px-5">{navElem.label}</div>
       <div
         className={`h-1 w-full rounded-sm mt-[1.125rem]  ${
           isSelected ? "bg-[#01244A]" : "bg-white"

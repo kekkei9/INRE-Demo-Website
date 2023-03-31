@@ -9,15 +9,15 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
         className={`py-[1.4375rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[1.875rem]
       ${isInTab ? "bg-[#F2F4F6]" : "bg-[#F1F1F1]"}`}
       >
-        <div className="relative h-full flex-1">
+        <div className="flex-shrink-0">
           <Image
             src={"/assets/home/img_2.png"}
             alt="home_1"
-            fill
-            className="object-contain"
+            width={731}
+            height={434}
           />
         </div>
-        <div className="flex flex-col gap-[2.1875rem] flex-1">
+        <div className="flex flex-col gap-[2.1875rem]">
           <div className="text-[2.125rem] font-bold">Who We Are</div>
           <div className="description-text">
             The Indian real estate sector is resilient despite global headwinds.

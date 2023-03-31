@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <NavData.Provider value={{ nav, setNav }}>
-      <div className="w-full h-28 bg-white px-20 absolute top-0 z-10 shadow">
+      <div className="w-full h-28 bg-white md:px-20 absolute top-0 z-10 shadow">
         <HeaderComponent navList={headerList} />
       </div>
       <div className="mt-28">

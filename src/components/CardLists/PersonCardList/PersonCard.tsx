@@ -8,15 +8,10 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
   return (
     <div className="div-card flex flex-col deep-shadow">
       <div className="relative aspect-[5/4]">
-        <Image
-          src={imgSrc}
-          alt="person img"
-          fill={true}
-          className="object-contain"
-        />
+        <Image src={imgSrc} alt="person img" fill className="object-contain" />
       </div>
       <div className="mt-5 title-text">{name}</div>
-      <div className={`text-base ${isViewMore ? "" : "line-clamp-3"}`}>
+      <div className={`description-text ${isViewMore ? "" : "line-clamp-3"}`}>
         {description}
       </div>
       <a

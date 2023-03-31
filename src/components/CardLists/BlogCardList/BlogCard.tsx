@@ -35,7 +35,7 @@ const BlogCard = ({
         <div className="mt-9">{title}</div>
         <div className="capitalize">{status}</div>
       </div>
-      <div className="mt-[0.875rem] text-base">{description}</div>
+      <div className="mt-[0.875rem] description-text">{description}</div>
       <button className="mt-[1.875rem] flex items-center w-fit self-end">
         <div className="mr-2">View More</div>
         <FontAwesomeIcon icon={faArrowRight} />

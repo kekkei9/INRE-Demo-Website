@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     colors: {
       white: "#FFFFFF",
+      black: "#000000",
       primary: "#002550",
       "text-primary": "#1A1A1A",
       "text-link-primary": "#002550",

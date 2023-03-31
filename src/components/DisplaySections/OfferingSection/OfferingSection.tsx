@@ -21,7 +21,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
     >
       <BeginSection label="Our Offerings" />
       {!isInTab && (
-        <div className="mt-[2.1875rem] font-semibold">
+        <div className="mt-[2.1875rem] font-semibold text-center">
           <span>
             This whole purchase journey can be divided into three stages. For
             more details,{" "}

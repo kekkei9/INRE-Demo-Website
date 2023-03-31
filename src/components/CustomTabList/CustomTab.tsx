@@ -12,15 +12,24 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
 
   return (
     <div
-      className={`relative cursor-pointer flex py-5 items-center justify-center gap-5 flex-1 font-normal text-2xl ${
-        isSelected ? "bg-[#ECECEC]" : "bg-[#F8F8F8]"
+      className={`relative text-[0.875rem] xl:text-2xl cursor-pointer center-flex md:flex-1 p-2 md:p-5 gap-[0.625rem] md:gap-5 font-semibold h-16 md:h-[6.25rem] min-w-[4rem] ${
+        isSelected ? "bg-[#ECECEC] flex-1" : "bg-[#F8F8F8]"
       }`}
       onClick={() => setCurrentTab(tab.key)}
     >
-      <div className="w-12 h-12 rounded-full hidden xl:flex items-center justify-center bg-white">
+      <div className="w-12 h-12 rounded-full center-flex bg-white hidden md:flex">
         {tab.key}
       </div>
-      <div className="max-w-[11.875rem] text-center">{tab.label}</div>
+      <div className="center-flex md:hidden">{`${tab.key}${
+        isSelected ? "." : ""
+      }`}</div>
+      <div
+        className={`max-w-[70%] text-center md:block md:font-normal xl:max-w-[12rem] ${
+          isSelected ? "block" : "hidden"
+        }`}
+      >
+        {tab.label}
+      </div>
       {isSelected && (
         <div className="absolute w-full bg-black h-[0.3125rem] bottom-0"></div>
       )}

@@ -10,7 +10,7 @@ interface IHeaderComponentProps {
 const Header = ({ navList }: IHeaderComponentProps) => {
   return (
     <div className="h-full relative">
-      <div className="absolute left-0 top-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 -translate-x-1/2 sm:left-0 top-1/2 -translate-y-1/2">
         <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
       </div>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2">

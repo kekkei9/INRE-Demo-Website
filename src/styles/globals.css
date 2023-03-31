@@ -2,11 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-[0.875rem] xl:text-[1.125rem]
+  }
+
+  button {
+    @apply w-fit rounded-[0.3125rem] text-primary border border-primary;
+    padding: 1.125rem 2rem;
+  }
+  
+  button.btn-primary {
+    @apply bg-primary text-white font-semibold;
+    padding: 0.71875rem 1.59375rem;
+  }
+}
+
 @layer components {
+  /* centering */
+  .center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   /* padding div */
   .div-section {
-    @apply px-10 lg:px-[14.25rem] py-[2.1875rem]
+    @apply px-[0.9375rem] py-[1.5625rem] lg:px-[14.25rem] lg:py-[2.1875rem]
   }
   .div-card {
     @apply p-6 rounded-[0.625rem]
@@ -19,11 +41,11 @@
 
   /* text */
   .title-text {
-    @apply font-semibold text-[1.75rem] text-primary 
+    @apply font-semibold text-xl xl:text-[1.75rem] text-primary 
   }
 
   .description-text {
-    @apply opacity-60 text-[1.125rem]
+    @apply opacity-60 text-[0.875rem] xl:text-[1.125rem]
   }
 }
 
@@ -133,21 +155,6 @@
 body {
   color: var(--text-primary-color);
   font-family: 'Open Sans';
-  font-size: 1.125rem;
 }
 
-button {
-  width: fit-content;
-  border-radius: 0.3125rem;
-  padding: 1.125rem 2rem;
-  font-size: 1.125rem;
-  color: #01244A;
-  border: 1px solid #01244A;
-}
 
-button.btn-primary {
-  padding: 0.71875rem 1.59375rem;
-  background-color: #01244A;
-  color: white;
-  font-weight: 600;
-}
