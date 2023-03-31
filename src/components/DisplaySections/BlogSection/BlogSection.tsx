@@ -4,7 +4,7 @@ import { blogList } from "../../HomePage/ThirdSection";
 
 const BlogSection = () => (
   <div className="pb-[3.4375rem]">
-    <div className="px-10 lg:px-[14.25rem] py-[2.1875rem] bg-[#E6EAEE]">
+    <div className="div-section bg-[#E6EAEE]">
       <div className="bg-[#F2F4F6] px-[1.6875rem] py-[1.4375rem] flex gap-[1.875rem] items-center flex-col 2xl:flex-row">
         <div className="flex-shrink-0">
           <Image
@@ -27,10 +27,8 @@ const BlogSection = () => (
         </div>
       </div>
     </div>
-    <div className="px-10 lg:px-[14.25rem] ">
-      <div className="py-[2.1875rem]">
-        <BlogCardList blogList={blogList.slice(0, 2)} />
-      </div>
+    <div className="div-section">
+      <BlogCardList blogList={blogList.slice(0, 2)} />
     </div>
   </div>
 );

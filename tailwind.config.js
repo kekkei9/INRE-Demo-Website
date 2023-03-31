@@ -10,8 +10,10 @@ module.exports = {
   ],
   theme: {
     colors: {
+      white: "#FFFFFF",
       primary: "#002550",
       "text-primary": "#1A1A1A",
+      "text-link-primary": "#002550",
       "slate-1": "#F2F4F6",
       "slate-2": "#E6EAEE",
       "slate-3": "#CCD3DC",

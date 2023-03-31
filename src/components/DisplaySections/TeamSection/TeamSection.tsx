@@ -6,20 +6,20 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
   return (
     <div>
       <div
-        className={`py-[1.125rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[2.125rem]
+        className={`py-[1.4375rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[1.875rem]
       ${isInTab ? "bg-[#F2F4F6]" : "bg-[#F1F1F1]"}`}
       >
-        <div className="flex-shrink-0">
+        <div className="relative h-full flex-1">
           <Image
             src={"/assets/home/img_2.png"}
             alt="home_1"
-            width={731}
-            height={373}
+            fill
+            className="object-contain"
           />
         </div>
-        <div>
+        <div className="flex flex-col gap-[2.1875rem] flex-1">
           <div className="text-[2.125rem] font-bold">Who We Are</div>
-          <div className="mt-5 opacity-60">
+          <div className="description-text">
             The Indian real estate sector is resilient despite global headwinds.
             Returns are impressive and the sector is expected to reach US$ 1
             trillion in market size by 2030 (Niti Aayog report, 2021). However,
@@ -30,7 +30,7 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
             destination. If you are experiencing difficulties in the real estate
             purchase journey, we are here to make it fast and transparent.
           </div>
-          <button className="mt-5 text-lg flex items-center gap-2">
+          <button className="text-lg flex items-center gap-2">
             <div>Contact Now</div>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>

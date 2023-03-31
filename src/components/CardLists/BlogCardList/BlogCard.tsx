@@ -13,7 +13,7 @@ const BlogCard = ({
   status,
 }: Blog) => {
   return (
-    <div className="div-card bg-white deep-shadow">
+    <div className="div-card flex flex-col bg-white deep-shadow">
       <div>
         <Image
           src={imgSrc}

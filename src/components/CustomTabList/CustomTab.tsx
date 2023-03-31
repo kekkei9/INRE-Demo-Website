@@ -12,16 +12,12 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
 
   return (
     <div
-      className={`relative cursor-pointer flex py-5 items-center justify-center gap-3 flex-1 font-semibold ${
+      className={`relative cursor-pointer flex py-5 items-center justify-center gap-5 flex-1 font-normal text-2xl ${
         isSelected ? "bg-[#ECECEC]" : "bg-[#F8F8F8]"
       }`}
       onClick={() => setCurrentTab(tab.key)}
     >
-      <div
-        className={`w-12 h-12 rounded-full hidden xl:flex items-center justify-center ${
-          isSelected ? "bg-[#D9D9D9]" : "bg-white"
-        }`}
-      >
+      <div className="w-12 h-12 rounded-full hidden xl:flex items-center justify-center bg-white">
         {tab.key}
       </div>
       <div className="max-w-[11.875rem] text-center">{tab.label}</div>

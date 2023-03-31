@@ -6,7 +6,7 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
   const [isViewMore, setIsViewMore] = useState(false);
 
   return (
-    <div className="div-card deep-shadow">
+    <div className="div-card flex flex-col deep-shadow">
       <div className="relative aspect-[5/4]">
         <Image
           src={imgSrc}

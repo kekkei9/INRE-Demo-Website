@@ -35,9 +35,7 @@ const HomePage = () => {
     <div>
       <FirstSection />
       <OfferingSection />
-      <div className="mt-[2.1875rem]">
-        <BeginSection label="Our Team Members" />
-      </div>
+      <BeginSection label="Our Team Members" />
       <div className="div-section">
         <PersonCardList personList={personList} />
       </div>

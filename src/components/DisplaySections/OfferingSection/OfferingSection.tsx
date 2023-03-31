@@ -14,23 +14,27 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
   const { setNav } = useContext(NavData);
 
   return (
-    <div className="px-10 lg:px-[14.25rem] py-9 flex flex-col items-center">
+    <div
+      className={`div-section flex flex-col items-center ${
+        isInTab && "py-[4.375rem]"
+      }`}
+    >
       <BeginSection label="Our Offerings" />
       {!isInTab && (
-        <div className="mt-5 font-semibold">
+        <div className="mt-[2.1875rem] font-semibold">
           <span>
             This whole purchase journey can be divided into three stages. For
             more details,{" "}
           </span>
           <a
-            className="underline text-[#0A009B] cursor-pointer"
+            className="text-text-link-primary cursor-pointer font-bold"
             onClick={() => setNav("offerings")}
           >
             Click Here
           </a>
         </div>
       )}
-      <div className="mt-5">
+      <div className="mt-[2.9375rem]">
         <CustomTabList tabList={tabList} />
       </div>
     </div>

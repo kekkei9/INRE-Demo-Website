@@ -22,7 +22,7 @@ export const contentList = {
   home: <HomePage />,
   offerings: <OfferingSection isInTab />,
   team: <TeamTab />,
-  contact: <ContactSection />,
+  contact: <ContactSection isInTab />,
   blogs: <BlogSection />,
 };
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
   return (
-    <div className="div-card shadow-[0_0_0_4px_rgba(0,0,0,0.3)]">
+    <div className="div-card flex flex-col shadow-[0_0_0_4px_rgba(0,0,0,0.3)]">
       <div>
         <Image
           src={imgSrc}

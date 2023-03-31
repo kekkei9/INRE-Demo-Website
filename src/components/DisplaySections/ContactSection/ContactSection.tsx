@@ -31,8 +31,12 @@ const formList: FormElem[] = [
   },
 ];
 
-const ContactSection = () => (
-  <div className="px-10 lg:px-[13.5rem] pt-9 pb-[4.1875rem]">
+const ContactSection = ({ isInTab }: { isInTab?: boolean }) => (
+  <div
+    className={`div-section lg:px-[13.5rem] ${
+      isInTab ? "py-[4.375rem]" : "pb-12"
+    }`}
+  >
     <div
       className="flex px-16 py-[3.6875rem] justify-between items-center"
       style={{ boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.07)" }}
