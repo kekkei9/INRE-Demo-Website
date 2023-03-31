@@ -1,10 +1,10 @@
-import { BeginSection } from "@components/BeginSection";
+import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { CustomTabList } from "@components/CustomTabList";
-import { PersonCardList } from "@components/PersonCardList";
+import { PersonCardList } from "@components/CardLists/PersonCardList";
 import { NavData } from "@context/NavData";
 import { Person } from "@src/types/person";
 import { useContext } from "react";
-import { tabList } from "./tabList";
+import { tabList } from "@components/HomePage/tabList";
 
 interface IOfferingSectionTab {
   isInTab?: boolean;

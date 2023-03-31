@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
-import { TopNavList } from "@components/TopNavList";
+import { TopNavList } from "@components/Header/TopNavList";
 import { Nav } from "@src/types/nav";
 
 interface IHeaderComponentProps {
@@ -9,14 +9,16 @@ interface IHeaderComponentProps {
 
 const Header = ({ navList }: IHeaderComponentProps) => {
   return (
-    <div className="flex justify-between items-center h-full">
-      <div>
+    <div className="h-full relative">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2">
         <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
       </div>
-      <div className="self-end">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
         <TopNavList navList={navList} />
       </div>
-      <button className="btn-primary">Register Now</button>
+      <button className="btn-primary absolute right-0 top-1/2 -translate-y-1/2">
+        Register Now
+      </button>
     </div>
   );
 };

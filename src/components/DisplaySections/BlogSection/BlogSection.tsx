@@ -1,6 +1,6 @@
-import { BlogCardList } from "@components/BlogCardList";
+import { BlogCardList } from "@components/CardLists/BlogCardList";
 import Image from "next/image";
-import { blogList } from "./ThirdSection";
+import { blogList } from "../../HomePage/ThirdSection";
 
 const BlogSection = () => (
   <div className="pb-[3.4375rem]">

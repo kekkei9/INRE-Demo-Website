@@ -5,10 +5,10 @@ import { useState } from "react";
 import { NavData } from "@context/NavData";
 import { Nav } from "@src/types/nav";
 import { HomePage } from "@components/HomePage";
-import OfferingSection from "@components/HomePage/OfferingSection";
-import { TeamTab } from "@components/HomePage/TeamSection.tsx";
-import ContactSection from "@components/HomePage/ContactSection";
-import BlogSection from "@components/HomePage/BlogSection";
+import OfferingSection from "@components/DisplaySections/OfferingSection/OfferingSection";
+import ContactSection from "@components/DisplaySections/ContactSection/ContactSection";
+import { TeamTab } from "@components/DisplaySections/TeamSection";
+import { BlogSection } from "@components/DisplaySections/BlogSection";
 
 export const headerList: Nav[] = [
   { key: "home", label: "Home" },

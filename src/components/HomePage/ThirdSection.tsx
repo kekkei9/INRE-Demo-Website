@@ -1,6 +1,6 @@
-import { BeginSection } from "@components/BeginSection";
+import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { Blog } from "@src/types/blog";
-import { BlogCardList } from "@components/BlogCardList";
+import { BlogCardList } from "@components/CardLists/BlogCardList";
 
 export const blogList: Blog[] = [
   {

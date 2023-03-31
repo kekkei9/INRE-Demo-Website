@@ -1,5 +1,5 @@
+import { personList } from "@components/HomePage/HomePage";
 import Image from "next/image";
-import { personList } from "../HomePage";
 import TeamSection from "./TeamSection";
 
 const TeamTab = () => {

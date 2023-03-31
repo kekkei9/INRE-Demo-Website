@@ -1,4 +1,4 @@
-import { BookingCardList } from "@components/BookingCardList";
+import { BookingCardList } from "@components/CardLists/BookingCardList";
 import { Booking } from "@src/types/booking";
 import { Tab } from "@src/types/tab";
 

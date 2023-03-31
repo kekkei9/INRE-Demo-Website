@@ -1,9 +1,9 @@
-import { BeginSection } from "@components/BeginSection";
-import { PersonCardList } from "@components/PersonCardList";
+import { BeginSection } from "@components/DisplaySections/BeginSection";
+import { PersonCardList } from "@components/CardLists/PersonCardList";
 import { Person } from "@src/types/person";
 import FirstSection from "./FirstSection";
-import ContactSection from "./ContactSection";
-import OfferingSection from "./OfferingSection";
+import ContactSection from "../DisplaySections/ContactSection/ContactSection";
+import OfferingSection from "../DisplaySections/OfferingSection/OfferingSection";
 import ThirdSection from "./ThirdSection";
 
 export const personList: Person[] = [

@@ -1,7 +1,7 @@
+import { TeamSection } from "@components/DisplaySections/TeamSection";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { TeamSection } from "./TeamSection.tsx";
 
 const FirstSection = () => {
   return (
