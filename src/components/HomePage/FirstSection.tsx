@@ -5,26 +5,34 @@ import Image from "next/image";
 
 const FirstSection = () => {
   return (
-    <div className="div-section pt-[4.375rem] pb-0">
+    <div className="div-section pt-0 max-md:px-0 md:pt-[4.375rem] pb-0">
       <div
         className="flex justify-between items-center mb-9"
         style={{ backgroundColor: "var(--primary-color)" }}
       >
-        <div className="ml-[3.375rem] flex-1">
-          <div className="text-[2.5rem] text-white capitalize font-['Solway']">
+        <div className="ml-4 md:ml-[3.375rem] flex-[3_3_0%] md:flex-1">
+          <div className="md:text-[2.5rem] text-white capitalize font-['Solway']">
             <span>making your </span>
-            <span className="text-[#FAFF00] font-bold text-4xl 2xl:text-5xl">
+            <span className="text-green md:text-[#FAFF00] font-bold md:text-5xl">
               real estate{" "}
             </span>
             <span>purchase journey faster and transparent</span>
           </div>
         </div>
-        <div className="relative aspect-[2/1] h-full flex-[2_2_0%]">
+        <div className="hidden md:block relative aspect-[2/1] h-full flex-[2_2_0%]">
           <Image
             src={"/assets/home/img_1.png"}
             alt="home_1"
             fill
-            className="object-contain"
+            className="object-fill"
+          />
+        </div>
+        <div className="block md:hidden relative aspect-[3/2] h-full flex-[7_7_0%]">
+          <Image
+            src={"/assets/home/img_1_mobile.png"}
+            alt="home_1"
+            fill
+            className="object-fill"
           />
         </div>
       </div>

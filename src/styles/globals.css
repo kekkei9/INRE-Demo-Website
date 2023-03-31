@@ -8,13 +8,12 @@
   }
 
   button {
-    @apply w-fit rounded-[0.3125rem] text-primary border border-primary;
+    @apply h-fit rounded-[0.3125rem] text-primary border border-primary;
     padding: 1.125rem 2rem;
   }
   
   button.btn-primary {
-    @apply bg-primary text-white font-semibold;
-    padding: 0.71875rem 1.59375rem;
+    @apply bg-primary text-white md:font-semibold px-[0.71875rem] py-[0.5rem] md:py-[0.71875rem] md:px-[1.59375rem];
   }
 }
 

@@ -30,7 +30,7 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
             destination. If you are experiencing difficulties in the real estate
             purchase journey, we are here to make it fast and transparent.
           </div>
-          <button className="text-lg flex items-center gap-2">
+          <button className="text-lg flex items-center gap-2 w-full justify-center md:w-fit">
             <div>Contact Now</div>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>

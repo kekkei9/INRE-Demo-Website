@@ -18,10 +18,10 @@ const Footer = () => {
   const { setNav } = useContext(NavData);
 
   return (
-    <div className="px-[8.25rem] py-8 bg-[#01244A] text-white">
+    <div className="px-[1.875rem] md:px-[8.25rem] py-8 bg-[#01244A] text-white">
       <div className="flex justify-between font-bold">
         <div>
-          <div className="hidden sm:block">
+          <div className="hidden md:block">
             <Image
               src={"/assets/logo.svg"}
               alt="logo"
@@ -60,12 +60,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 flex justify-between">
-        <div>
+      <div className="mt-24 flex justify-between flex-col-reverse md:flex-row gap-[2.4375rem] text-xl md:text-lg">
+        <div className="max-md:text-[#CCD3DC] max-md:text-base">
           <span>Copyright 2023. Designed by </span>
-          <span className="font-bold">INRE Global</span>
+          <span className="md:font-bold">INRE Global</span>
         </div>
-        <div className="hidden lg:flex gap-[0.875rem] font-bold">
+        <div className="flex gap-[0.875rem] font-bold flex-col md:flex-row">
           <div className="flex gap-[0.875rem] items-center">
             <FontAwesomeIcon icon={faLinkedinIn} />
             <div>LinkedIn</div>

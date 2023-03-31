@@ -27,14 +27,14 @@ export const contentList = {
 };
 
 export default function Home() {
-  const [nav, setNav] = useState("home");
+  const [nav, setNav] = useState(headerList[0].key);
 
   return (
     <NavData.Provider value={{ nav, setNav }}>
-      <div className="w-full h-28 bg-white md:px-20 absolute top-0 z-10 shadow">
+      <div className="w-full h-[3.625rem] md:h-28 bg-white py-[0.625rem] px-4 md:px-20 absolute top-0 z-10 shadow">
         <HeaderComponent navList={headerList} />
       </div>
-      <div className="mt-28">
+      <div className="mt-[3.625rem] md:mt-28">
         {contentList[nav as keyof typeof contentList]}
       </div>
       <Footer />

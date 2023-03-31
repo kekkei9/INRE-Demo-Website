@@ -11,8 +11,19 @@ const Header = ({ navList }: IHeaderComponentProps) => {
   return (
     <div className="h-full relative">
       <div className="absolute left-1/2 -translate-x-1/2 sm:left-0 top-1/2 -translate-y-1/2">
-        <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
+        <div className="hidden md:block">
+          <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
+        </div>
+        <div className="block md:hidden">
+          <Image
+            src={"/assets/logo_mobile.svg"}
+            alt="logo_mobile"
+            width={60}
+            height={30}
+          />
+        </div>
       </div>
+
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
         <TopNavList navList={navList} />
       </div>
