@@ -16,7 +16,7 @@ const Header = ({ navList }: IHeaderComponentProps) => {
       <div className="self-end">
         <TopNavList navList={navList} />
       </div>
-      <button className="primary">Register Now</button>
+      <button className="btn-primary">Register Now</button>
     </div>
   );
 };

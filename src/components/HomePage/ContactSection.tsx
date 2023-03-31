@@ -48,7 +48,9 @@ const ContactSection = () => (
           ))}
         </div>
         <div className="mt-7 flex flex-col items-center 2xl:justify-start">
-          <button className="primary w-[15rem] sm:w-[21.875rem]">Submit</button>
+          <button className="btn-primary w-[15rem] sm:w-[21.875rem]">
+            Submit
+          </button>
         </div>
       </div>
       <div className="flex-shrink-0 hidden 2xl:block">

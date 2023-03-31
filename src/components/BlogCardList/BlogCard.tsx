@@ -13,10 +13,7 @@ const BlogCard = ({
   status,
 }: Blog) => {
   return (
-    <div
-      className="p-6 flex flex-col bg-white rounded-[0.625rem]"
-      style={{ boxShadow: "0px 4px 61px rgba(0, 0, 0, 0.16)" }}
-    >
+    <div className="div-card bg-white deep-shadow">
       <div>
         <Image
           src={imgSrc}
@@ -34,7 +31,7 @@ const BlogCard = ({
         </div>
         <div className="capitalize font-semibold">by {by}</div>
       </div>
-      <div className="font-bold text-[1.75rem]">
+      <div className="title-text">
         <div className="mt-9">{title}</div>
         <div className="capitalize">{status}</div>
       </div>

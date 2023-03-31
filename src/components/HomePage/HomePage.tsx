@@ -38,7 +38,7 @@ const HomePage = () => {
       <div className="mt-[2.1875rem]">
         <BeginSection label="Our Team Members" />
       </div>
-      <div className="px-10 lg:px-[14.25rem] py-[2.1875rem]">
+      <div className="div-section">
         <PersonCardList personList={personList} />
       </div>
       <ThirdSection />

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
   return (
-    <div className="p-6 flex flex-col rounded-[0.625rem] shadow-[0_0_0_4px_rgba(0,0,0,0.3)]">
+    <div className="div-card shadow-[0_0_0_4px_rgba(0,0,0,0.3)]">
       <div>
         <Image
           src={imgSrc}
@@ -15,7 +15,7 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
           className="w-full h-auto"
         />
       </div>
-      <div className="mt-[1.875rem] text-[1.75rem] font-bold">{title}</div>
+      <div className="mt-[1.875rem] title-text">{title}</div>
       <div className="mt-5 text-base">{description}</div>
       <div className="flex justify-between mt-5 items-center">
         <button className="flex items-center gap-2">

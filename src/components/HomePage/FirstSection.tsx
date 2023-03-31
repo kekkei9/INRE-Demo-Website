@@ -5,7 +5,7 @@ import { TeamSection } from "./TeamSection.tsx";
 
 const FirstSection = () => {
   return (
-    <div className="px-10 lg:px-[14.25rem] pt-[4.375rem]">
+    <div className="div-section">
       <div
         className="flex justify-between items-center mb-9"
         style={{ backgroundColor: "var(--primary-color)" }}

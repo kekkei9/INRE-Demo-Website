@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+  /* padding div */
+  .div-section {
+    @apply px-10 lg:px-[14.25rem] py-[2.1875rem]
+  }
+  .div-card {
+    @apply p-6 flex flex-col rounded-[0.625rem]
+  }
+
+  /* shadow */
+  .deep-shadow {
+    box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.16);
+  }
+
+  /* text */
+  .title-text {
+    @apply font-semibold text-[1.75rem] text-primary 
+  }
+}
+
 /* latin */
 @font-face {
   font-family: 'Solway';
@@ -63,10 +84,12 @@
 
 :root {
   --default-background: #FFFFFF;
-  --primary-color: #01244A
+  --primary-color: #01244A;
+  --text-primary-color: #1A1A1A;
 }
 
 body {
+  color: var(--text-primary-color);
   font-family: Mulish;
   font-size: 1.125rem;
 }
@@ -79,7 +102,7 @@ button {
   border: 1px solid #01244A;
 }
 
-button.primary {
+button.btn-primary {
   padding: 12.5px 26.5px;
   background-color: #01244A;
   color: white;

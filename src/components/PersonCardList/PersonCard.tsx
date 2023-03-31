@@ -6,10 +6,7 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
   const [isViewMore, setIsViewMore] = useState(false);
 
   return (
-    <div
-      className="p-6 flex flex-col rounded-[0.625rem]"
-      style={{ boxShadow: "0px 4px 61px rgba(0, 0, 0, 0.16)" }}
-    >
+    <div className="div-card deep-shadow">
       <div className="relative aspect-[5/4]">
         <Image
           src={imgSrc}
@@ -18,7 +15,7 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
           className="object-contain"
         />
       </div>
-      <div className="mt-5 text-[1.625rem] font-semibold">{name}</div>
+      <div className="mt-5 title-text">{name}</div>
       <div className={`text-base ${isViewMore ? "" : "line-clamp-3"}`}>
         {description}
       </div>
