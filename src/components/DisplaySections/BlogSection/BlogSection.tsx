@@ -18,7 +18,7 @@ const BlogSection = () => (
           <div className="text-4xl font-bold">
             The Most Expensive Bangalore Real Estate Sales For 2023
           </div>
-          <div className="text-2xl mt-[2.1875rem]">
+          <div className="text-2xl mt-[0.625rem] md:mt-[2.1875rem]">
             with several sales in the Bangalore eclipsing the Rs.200 cr mark. As
             the pandemic continued, the ultra-wealthy sought second (and third)
             homes to add to their portfolios and were willing to spend a fortune

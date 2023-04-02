@@ -21,7 +21,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
     >
       <BeginSection label="Our Offerings" />
       {!isInTab && (
-        <div className="mt-[2.1875rem] font-semibold text-center">
+        <div className="mt-[0.625rem] md:mt-[2.1875rem] font-semibold text-center">
           <span>
             This whole purchase journey can be divided into three stages. For
             more details,{" "}
@@ -34,7 +34,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
           </a>
         </div>
       )}
-      <div className="mt-[2.9375rem]">
+      <div className="mt-[0.625rem] md:mt-[2.9375rem]">
         <CustomTabList tabList={tabList} />
       </div>
     </div>

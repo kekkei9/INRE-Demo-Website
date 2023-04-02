@@ -36,7 +36,7 @@ export const blogList: Blog[] = [
 ];
 
 const ThirdSection = () => (
-  <div className="div-section bg-[#F1F1F1] py-[3.4375rem]">
+  <div className="div-section bg-[#F1F1F1] md:py-[3.4375rem]">
     <div className="mb-9">
       <BeginSection label="Blogs" />
     </div>
