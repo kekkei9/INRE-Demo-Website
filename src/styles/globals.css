@@ -46,6 +46,11 @@
   .description-text {
     @apply opacity-60 text-[0.875rem] xl:text-[1.125rem]
   }
+
+  /* gap-card */
+  .gap-card {
+    @apply gap-5 md:gap-[2.875rem]
+  }
 }
 
 /* latin */

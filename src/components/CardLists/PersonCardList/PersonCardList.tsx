@@ -3,7 +3,7 @@ import PersonCard from "./PersonCard";
 
 const PersonCardList = ({ personList }: { personList: Person[] }) => {
   return (
-    <div className="flex w-full gap-[2.875rem] flex-col 2xl:flex-row">
+    <div className="flex w-full gap-card flex-col 2xl:flex-row">
       {personList.map((person, index) => (
         <div className="flex flex-1" key={index}>
           <PersonCard {...person} />

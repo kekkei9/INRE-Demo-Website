@@ -17,7 +17,7 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
             height={434}
           />
         </div>
-        <div className="flex flex-col gap-[2.1875rem]">
+        <div className="flex flex-col gap-5 md:gap-[2.1875rem]">
           <div className="text-[2.125rem] font-bold">Who We Are</div>
           <div className="description-text">
             The Indian real estate sector is resilient despite global headwinds.

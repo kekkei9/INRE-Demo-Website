@@ -11,17 +11,17 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { headerList } from "@pages/_app";
 import Image from "next/image";
+import Link from "next/link";
 import { Dispatch, SetStateAction, useContext } from "react";
 
 const Footer = () => {
-  const { setNav } = useContext(NavData);
-
   return (
     <div className="px-[1.875rem] md:px-[8.25rem] py-8 bg-[#01244A] text-white">
-      <div className="flex justify-between font-bold">
+      <div className="flex justify-between font-bold flex-col md:flex-row">
         <div>
-          <div className="hidden md:block">
+          <div>
             <Image
               src={"/assets/logo.svg"}
               alt="logo"
@@ -31,15 +31,19 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="hidden lg:flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <div className="text-[1.875rem]">Company</div>
-          <div onClick={() => setNav("home")}>Home</div>
-          <div onClick={() => setNav("team")}>Our Team</div>
-          <div onClick={() => setNav("contact")}>Contact Us</div>
+          {headerList
+            .filter((nav) => ["home", "team", "contact"].includes(nav.key))
+            .map((nav) => (
+              <Link href={nav.path} key={nav.key}>
+                {nav.label}
+              </Link>
+            ))}
         </div>
-        <div className="hidden lg:block">
+        <div>
           <div className="text-[1.875rem] mb-4">Useful Link</div>
-          <div onClick={() => setNav("blogs")}>Blogs</div>
+          <Link href="blogs">Blogs</Link>
         </div>
 
         <div>

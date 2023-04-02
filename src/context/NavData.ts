@@ -2,7 +2,7 @@ import { createContext, Dispatch, SetStateAction } from "react";
 
 export type NavDataType = {
   nav: string;
-  setNav: Dispatch<SetStateAction<string>>;
+  setNav: any;
 };
 
 export const NavData = createContext<NavDataType>({

@@ -1,14 +1,14 @@
-import { personList } from "@components/HomePage/HomePage";
+import { TeamSection } from "@components/DisplaySections/TeamSection";
+import { personList } from "./home";
 import Image from "next/image";
-import TeamSection from "./TeamSection";
 
-const TeamTab = () => {
+const TeamPage = () => {
   return (
     <div>
       <div className="bg-[#E6EAEE] px-10 lg:px-[14.25rem] py-[2.1875rem]">
         <TeamSection isInTab />
       </div>
-      <div className="px-10 lg:px-[14.25rem] py-[2.1875rem] flex flex-col gap-[2.1875rem]">
+      <div className="px-10 lg:px-[14.25rem] py-[2.1875rem] flex flex-col gap-5 md:gap-[2.1875rem]">
         {personList.map((person, index) => (
           <div
             key={index}
@@ -38,4 +38,4 @@ const TeamTab = () => {
   );
 };
 
-export default TeamTab;
+export default TeamPage;

@@ -6,14 +6,11 @@ import Image from "next/image";
 const FirstSection = () => {
   return (
     <div className="div-section pt-0 max-md:px-0 md:pt-[4.375rem] pb-0">
-      <div
-        className="flex justify-between items-center mb-9"
-        style={{ backgroundColor: "var(--primary-color)" }}
-      >
+      <div className="flex justify-between items-center mb-9 bg-primary">
         <div className="ml-4 md:ml-[3.375rem] flex-[3_3_0%] md:flex-1">
-          <div className="md:text-[2.5rem] text-white capitalize font-['Solway']">
+          <div className="md:text-lg xl:text-2xl 2xl:text-[2.5rem] 2xl:leading-[3.5rem] text-white capitalize font-['Solway']">
             <span>making your </span>
-            <span className="text-green md:text-[#FAFF00] font-bold md:text-5xl">
+            <span className="text-green md:text-[#FAFF00] font-bold md:text-xl xl:text-3xl 2xl:text-5xl">
               real estate{" "}
             </span>
             <span>purchase journey faster and transparent</span>

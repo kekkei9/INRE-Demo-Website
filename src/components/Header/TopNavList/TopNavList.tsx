@@ -8,19 +8,14 @@ interface ITopNavListProps {
 }
 
 const TopNavList = ({ navList }: ITopNavListProps) => {
-  const { nav, setNav } = useContext(NavData);
-
   return (
-    <div className="hidden md:block">
-      <div className="w-fit flex">
-        {navList.map((navElem) => (
-          <TopNav
-            navElem={navElem}
-            nav={nav}
-            setNav={setNav}
-            key={navElem.key}
-          />
-        ))}
+    <div>
+      <div className="hidden md:block">
+        <div className="w-fit flex">
+          {navList.map((navElem) => (
+            <TopNav navElem={navElem} key={navElem.key} />
+          ))}
+        </div>
       </div>
     </div>
   );
