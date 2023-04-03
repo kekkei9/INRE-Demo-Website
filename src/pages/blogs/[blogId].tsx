@@ -27,7 +27,11 @@ const Blog = () => {
     <div>
       <div className="div-section text-base md:text-xl flex flex-col gap-5 md:gap-[2.1875rem]">
         <div className="flex items-center">
-          <FontAwesomeIcon icon={faArrowLeft} onClick={() => router.back()} />
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            onClick={() => router.back()}
+            className="cursor-pointer"
+          />
           <div className="ml-[1.125rem]">
             Guide for personal property Buying{" "}
           </div>

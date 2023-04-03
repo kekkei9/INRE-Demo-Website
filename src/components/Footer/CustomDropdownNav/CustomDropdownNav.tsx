@@ -21,7 +21,9 @@ const CustomDropdownNav = ({ navList, label }: ICustomDropdownNavProps) => {
         <div className="text-xl md:text-[1.875rem]">{label}</div>
         <FontAwesomeIcon
           icon={faCaretDown}
-          className={`transition-all ${isOpen ? "rotate-180" : "rotate-0"}`}
+          className={`md:hidden transition-all ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
         />
       </div>
       {isOpen && (
