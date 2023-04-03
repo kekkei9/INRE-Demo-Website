@@ -1,3 +1,5 @@
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Nav } from "@src/types/nav";
 import Link from "next/link";
 import { Dispatch, SetStateAction, useState } from "react";
@@ -13,10 +15,14 @@ const CustomDropdownNav = ({ navList, label }: ICustomDropdownNavProps) => {
   return (
     <div className="flex flex-col gap-5 md:gap-6">
       <div
-        className="text-xl md:text-[1.875rem]"
+        className="flex justify-between items-center"
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        {label}
+        <div className="text-xl md:text-[1.875rem]">{label}</div>
+        <FontAwesomeIcon
+          icon={faCaretDown}
+          className={`transition-all ${isOpen ? "rotate-180" : "rotate-0"}`}
+        />
       </div>
       {isOpen && (
         <>

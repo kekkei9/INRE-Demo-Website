@@ -15,7 +15,10 @@ const TopNav = ({ navElem }: ITopNavListProps) => {
       <div className="font-bold px-5">{navElem.label}</div>
       <div
         className={`h-1 w-full rounded-sm mt-[1.125rem]  ${
-          navElem.path === router.asPath ? "bg-[#01244A]" : "bg-white"
+          (router.asPath === "/" && navElem.path === "/home") ||
+          navElem.path === router.asPath
+            ? "bg-[#01244A]"
+            : "bg-white"
         }`}
       />
     </Link>

@@ -20,9 +20,7 @@
 @layer components {
   /* centering */
   .center-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @apply flex justify-center items-center
   }
 
   /* padding div */
