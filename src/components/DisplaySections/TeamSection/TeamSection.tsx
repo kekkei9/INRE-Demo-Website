@@ -6,7 +6,7 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
   return (
     <div>
       <div
-        className={`py-[1.4375rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[1.875rem]
+        className={`py-[1.4375rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[1.875rem] max-md:rounded-[0.625rem]
       ${isInTab ? "bg-[#F2F4F6]" : "bg-[#F1F1F1]"}`}
       >
         <div className="flex-shrink-0">

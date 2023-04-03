@@ -34,7 +34,7 @@ const formList: FormElem[] = [
 const ContactSection = ({ isInTab }: { isInTab?: boolean }) => (
   <div
     className={`div-section lg:px-[13.5rem] ${
-      isInTab ? "py-[4.375rem]" : "pb-12"
+      isInTab ? "py-[1.875rem] md:py-[4.375rem]" : "pb-12"
     }`}
   >
     <div

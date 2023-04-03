@@ -2,6 +2,7 @@ import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Blog } from "@src/types/blog";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const BlogCard = ({
   imgSrc,
@@ -12,8 +13,12 @@ const BlogCard = ({
   description,
   status,
 }: Blog) => {
+  const router = useRouter();
   return (
-    <div className="div-card flex flex-col bg-white deep-shadow">
+    <div
+      className="div-card flex flex-col bg-white deep-shadow hover:border"
+      onClick={() => router.push("/blogs/1")}
+    >
       <div>
         <Image
           src={imgSrc}

@@ -4,7 +4,7 @@ import { PersonCardList } from "@components/CardLists/PersonCardList";
 import { NavData } from "@context/NavData";
 import { Person } from "@src/types/person";
 import { useContext } from "react";
-import { tabList } from "@components/HomePage/tabList";
+import { tabList } from "./tabList";
 
 interface IOfferingSectionTab {
   isInTab?: boolean;
@@ -16,7 +16,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
   return (
     <div
       className={`div-section flex flex-col items-center ${
-        isInTab && "py-[4.375rem]"
+        isInTab && "py-[1.875rem] md:py-[4.375rem]"
       }`}
     >
       <BeginSection label="Our Offerings" />

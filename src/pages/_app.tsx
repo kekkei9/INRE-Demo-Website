@@ -15,7 +15,7 @@ export const headerList: Nav[] = [
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className="w-full h-[3.625rem] md:h-28 bg-white absolute top-0 z-10 shadow">
+      <div className="w-full h-[3.625rem] md:h-28 bg-white fixed top-0 z-10 shadow">
         <HeaderComponent navList={headerList} />
       </div>
       <div className="mt-[3.625rem] md:mt-28">

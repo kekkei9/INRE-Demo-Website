@@ -40,7 +40,9 @@ const MobileNav = ({ isOpenMenu, setIsOpenMenu, navList }: IMobileNavProps) => {
             href={nav.path}
             onClick={() => setIsOpenMenu(false)}
             className={`py-[0.9375rem] px-[1.5625rem] ${
-              router.asPath === nav.path && "font-semibold"
+              ((router.asPath === "/" && nav.path === "/home") ||
+                router.asPath === nav.path) &&
+              "font-semibold"
             }`}
           >
             {nav.label}
