@@ -4,31 +4,34 @@ import { BlogCardList } from "@components/CardLists/BlogCardList";
 
 export const blogList: Blog[] = [
   {
+    id: "1",
     imgSrc: "/assets/home/blogs/img_1.png",
     address: "Real Estate, Analysis",
     time: "09 jun 2022",
     by: "admin",
-    title: "Guide for personal property",
+    title: "Application of Blockchain in real estate industry",
     status: "buying",
     description:
       '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididuut labore dolore magna aliqua do eiusmod...',
   },
   {
+    id: "2",
     imgSrc: "/assets/home/blogs/img_2.png",
     address: "Real Estate, Analysis",
     time: "09 jun 2022",
     by: "admin",
-    title: "Guide for personal property",
+    title: "Real estate Challenges in Bengaluru",
     status: "buying",
     description:
       '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididuut labore dolore magna aliqua do eiusmod...',
   },
   {
+    id: "3",
     imgSrc: "/assets/home/blogs/img_3.png",
     address: "Real Estate, Analysis",
     time: "09 jun 2022",
     by: "admin",
-    title: "Guide for personal property",
+    title: "Artificial Intelligence in Realty",
     status: "buying",
     description:
       '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididuut labore dolore magna aliqua do eiusmod...',

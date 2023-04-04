@@ -29,6 +29,10 @@
     text-overflow: '';  
   }
 
+  .intl-tel-input .country-list {
+    z-index: 20;
+  }
+
   .intl-tel-input {
     @apply w-full rounded-[0.25rem] px-6 py-[1.03125rem];
     border: 1.5px solid #888888;

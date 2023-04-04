@@ -11,13 +11,13 @@ const BlogCard = ({
   by,
   title,
   description,
-  status,
+  id,
 }: Blog) => {
   const router = useRouter();
   return (
     <div
       className="div-card flex flex-col bg-white deep-shadow hover:border"
-      onClick={() => router.push("/blogs/1")}
+      onClick={() => router.push(`/blogs/${id}`)}
     >
       <div>
         <Image
