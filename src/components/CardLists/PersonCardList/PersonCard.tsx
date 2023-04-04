@@ -11,7 +11,12 @@ const PersonCard = ({ imgSrc, name, description }: Person) => {
         <Image src={imgSrc} alt="person img" fill className="object-contain" />
       </div>
       <div className="mt-5 title-text">{name}</div>
-      <div className={`description-text ${isViewMore ? "" : "line-clamp-3"}`}>
+      <div className="block sm:hidden mt-3"></div>
+      <div
+        className={`description-text mt-3 ${
+          isViewMore ? "" : "line-clamp-4 sm:line-clamp-3"
+        }`}
+      >
         {description}
       </div>
       <a

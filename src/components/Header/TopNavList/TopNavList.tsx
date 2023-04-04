@@ -10,7 +10,7 @@ interface ITopNavListProps {
 const TopNavList = ({ navList }: ITopNavListProps) => {
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden sm:block">
         <div className="w-fit flex">
           {navList.map((navElem) => (
             <TopNav navElem={navElem} key={navElem.key} />

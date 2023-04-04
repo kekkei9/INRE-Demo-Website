@@ -13,15 +13,15 @@ const CustomDropdownNav = ({ navList, label }: ICustomDropdownNavProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
 
   return (
-    <div className="flex flex-col gap-5 md:gap-6">
+    <div className="flex flex-col gap-5 sm:gap-6">
       <div
         className="flex justify-between items-center"
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <div className="text-xl md:text-[1.875rem]">{label}</div>
+        <div className="text-xl sm:text-[1.875rem]">{label}</div>
         <FontAwesomeIcon
           icon={faCaretDown}
-          className={`md:hidden transition-all ${
+          className={`sm:hidden transition-all ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
         />

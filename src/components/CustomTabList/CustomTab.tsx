@@ -12,19 +12,19 @@ const CustomTab = ({ tab, currentTab, setCurrentTab }: ICustomTabProps) => {
 
   return (
     <div
-      className={`relative text-[0.875rem] xl:text-2xl cursor-pointer center-flex md:flex-1 p-2 md:p-5 gap-[0.625rem] md:gap-5 font-semibold h-16 md:h-[6.25rem] min-w-[4rem] ${
+      className={`relative text-[0.875rem] xl:text-2xl cursor-pointer center-flex sm:flex-1 p-2 sm:p-5 gap-[0.625rem] sm:gap-5 font-semibold h-16 sm:h-[6.25rem] min-w-[4rem] ${
         isSelected ? "bg-[#ECECEC] flex-1" : "bg-[#F8F8F8]"
       }`}
       onClick={() => setCurrentTab(tab.key)}
     >
-      <div className="w-12 h-12 rounded-full center-flex bg-white hidden md:flex">
+      <div className="w-12 h-12 rounded-full center-flex bg-white hidden sm:flex">
         {tab.key}
       </div>
-      <div className="center-flex md:hidden">{`${tab.key}${
+      <div className="center-flex sm:hidden">{`${tab.key}${
         isSelected ? "." : ""
       }`}</div>
       <div
-        className={`max-w-[70%] text-center md:block md:font-normal xl:max-w-[12rem] ${
+        className={`max-w-[70%] text-center sm:block sm:font-normal xl:max-w-[12rem] ${
           isSelected ? "block" : "hidden"
         }`}
       >

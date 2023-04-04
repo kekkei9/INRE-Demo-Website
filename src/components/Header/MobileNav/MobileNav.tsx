@@ -21,7 +21,7 @@ const MobileNav = ({ isOpenMenu, setIsOpenMenu, navList }: IMobileNavProps) => {
         }`}
       >
         <div className="py-[0.625rem] px-[1.5625rem] bg-primary">
-          <div className="block md:hidden">
+          <div className="block sm:hidden">
             <Image
               src={"/assets/logo_horizontal.svg"}
               alt="logo_mobile"

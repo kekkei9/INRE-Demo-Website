@@ -9,9 +9,11 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
       <div className="relative aspect-[5/4]">
         <Image src={imgSrc} alt="booking img" fill className="object-contain" />
       </div>
-      <div className="mt-[1.875rem] title-text">{title}</div>
-      <div className="mt-5 description-text">{description}</div>
-      <div className="flex justify-between mt-5 items-center">
+      <div className="mt-[0.625rem] sm:mt-[1.875rem] title-text">{title}</div>
+      <div className="mt-[0.625rem] sm:mt-5 description-text">
+        {description}
+      </div>
+      <div className="flex justify-between mt-[0.625rem] sm:mt-5 items-center">
         <button className="flex items-center gap-2">
           <div>Contact Us</div>
           <FontAwesomeIcon icon={faArrowRight} />

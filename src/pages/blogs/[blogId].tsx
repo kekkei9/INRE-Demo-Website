@@ -25,7 +25,7 @@ const Blog = () => {
 
   return (
     <div>
-      <div className="div-section text-base md:text-xl flex flex-col gap-5 md:gap-[2.1875rem]">
+      <div className="div-section text-base sm:text-xl flex flex-col gap-5 sm:gap-[2.1875rem]">
         <div className="flex items-center">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -36,7 +36,7 @@ const Blog = () => {
             Guide for personal property Buying{" "}
           </div>
         </div>
-        <div className="block md:hidden aspect-[4/3] relative">
+        <div className="block sm:hidden aspect-[4/3] relative">
           <Image
             src="/assets/home/blogs/1/img_1.png"
             alt="img blog 1"
@@ -44,7 +44,7 @@ const Blog = () => {
             className="object-fill"
           />
         </div>
-        <div className="hidden md:block aspect-[10/3] relative">
+        <div className="hidden sm:block aspect-[10/3] relative">
           <Image
             src="/assets/home/blogs/1/img_1_desktop.png"
             alt="img blog 1"
@@ -52,7 +52,7 @@ const Blog = () => {
             className="object-fill"
           />
         </div>
-        <div className="flex max-md:justify-between gap-[8.125rem] md:text-2xl">
+        <div className="flex max-sm:justify-between gap-[8.125rem] sm:text-2xl">
           <div className="flex gap-[0.875rem]">
             <div>
               <FontAwesomeIcon icon={faUser} />
@@ -64,14 +64,14 @@ const Blog = () => {
             <div>09 jun 2022</div>
           </div>
         </div>
-        <div className="p-[0.9375rem] bg-[#F2F4F6] relative md:px-12">
+        <div className="p-[0.9375rem] bg-[#F2F4F6] relative sm:px-12">
           <div className="opacity-60">
             This whole purchase journey of real estate purchase can be divided
             into three broad stages. For more details, click here
           </div>
           <div className="h-full w-[0.3125rem] left-0 top-0 absolute bg-primary rounded-[0.3125rem]"></div>
         </div>
-        <div className="opacity-60 md:text-2xl">
+        <div className="opacity-60 sm:text-2xl">
           The first one is the pre-booking stage. In this stage, you are
           evaluating various prospective properties, deciding on the budget and
           the size of the property to invest which meet the requirements and
@@ -113,7 +113,7 @@ const Blog = () => {
           etc. Hassle free registration especially when you are not in the city
           where the property is situated.
         </div>
-        <div className="py-[4.375rem] hidden md:block">
+        <div className="py-[4.375rem] hidden sm:block">
           <div className="border" />
           <div className="mt-[4.375rem] flex justify-between">
             <Link href={`/blogs/${blogId ? Number(blogId) - 1 : ""}`}>
@@ -124,7 +124,7 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md: justify-between gap-5">
+        <div className="flex flex-col sm:flex-row sm: justify-between gap-5">
           <div className="flex flex-col gap-5">
             <div className="font-semibold text-primary text-2xl mt-[0.625rem]">
               Share this Post and Follow us on :
@@ -145,19 +145,19 @@ const Blog = () => {
               Register Now For Regular Updates :
             </div>
             <button className="text-lg flex items-center gap-2 justify-center w-fit">
-              <div className="block md:hidden">Register Now</div>
-              <div className="hidden md:block">Contact Now</div>
+              <div className="block sm:hidden">Register Now</div>
+              <div className="hidden sm:block">Contact Now</div>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
         </div>
       </div>
-      <div className="div-section flex flex-col gap-5 bg-[#CCD3DC] md:bg-[#F2F4F6]">
+      <div className="div-section flex flex-col gap-5 bg-[#CCD3DC] sm:bg-[#F2F4F6]">
         <BeginSection label="You May Also Like This" />
-        <div className="block md:hidden">
+        <div className="block sm:hidden">
           <BlogCard {...blogList[0]} />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden sm:block">
           <BlogCardList blogList={blogList} />
         </div>
       </div>

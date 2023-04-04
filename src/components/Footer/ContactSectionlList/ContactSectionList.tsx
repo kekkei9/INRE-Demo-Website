@@ -8,7 +8,7 @@ interface IContactSectionListProps {
 
 const ContactSectionList = ({ contactList }: IContactSectionListProps) => {
   return (
-    <div className="max-md:font-normal">
+    <div className="max-sm:font-normal">
       {contactList.map((contact) => (
         <ContactSection key={contact.label} {...contact} />
       ))}

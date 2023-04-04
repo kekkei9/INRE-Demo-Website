@@ -15,11 +15,11 @@ const Header = ({ navList }: IHeaderComponentProps) => {
 
   return (
     <div className="h-full relative">
-      <div className="absolute left-1/2 -translate-x-1/2 md:left-20 top-1/2 -translate-y-1/2">
-        <div className="hidden md:block">
+      <div className="absolute left-1/2 -translate-x-1/2 sm:left-20 top-1/2 -translate-y-1/2">
+        <div className="hidden sm:block">
           <Image src={"/assets/logo.svg"} alt="logo" width={68} height={42} />
         </div>
-        <div className="block md:hidden">
+        <div className="block sm:hidden">
           <Image
             src={"/assets/logo_mobile.svg"}
             alt="logo_mobile"
@@ -37,12 +37,12 @@ const Header = ({ navList }: IHeaderComponentProps) => {
         navList={navList}
       />
       <div
-        className="block md:hidden absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer"
+        className="block sm:hidden absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer"
         onClick={() => setIsOpenMenu(true)}
       >
         <FontAwesomeIcon icon={faBars} />
       </div>
-      <button className="btn-primary absolute right-4 md:right-20 top-1/2 -translate-y-1/2">
+      <button className="btn-primary absolute right-4 sm:right-20 top-1/2 -translate-y-1/2">
         Register Now
       </button>
     </div>

@@ -16,12 +16,12 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
   return (
     <div
       className={`div-section flex flex-col items-center ${
-        isInTab && "py-[1.875rem] md:py-[4.375rem]"
+        isInTab && "py-[1.875rem] sm:py-[4.375rem]"
       }`}
     >
       <BeginSection label="Our Offerings" />
       {!isInTab && (
-        <div className="mt-[0.625rem] md:mt-[2.1875rem] font-semibold text-center">
+        <div className="mt-[0.625rem] sm:mt-[2.1875rem] font-semibold text-center">
           <span>
             This whole purchase journey can be divided into three stages. For
             more details,{" "}
@@ -34,7 +34,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
           </a>
         </div>
       )}
-      <div className="mt-[0.625rem] md:mt-[2.9375rem]">
+      <div className="mt-[0.625rem] sm:mt-[2.9375rem]">
         <CustomTabList tabList={tabList} />
       </div>
     </div>

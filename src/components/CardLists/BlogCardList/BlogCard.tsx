@@ -28,20 +28,22 @@ const BlogCard = ({
           className="w-full h-auto"
         />
       </div>
-      <div className="mt-[1.875rem] font-semibold">{address}</div>
-      <div className="mt-7 flex justify-between font-medium">
+      <div className="mt-5 sm:mt-[1.875rem] font-semibold">{address}</div>
+      <div className="mt-3 sm:mt-7 flex justify-between font-medium">
         <div className="flex items-center">
           <FontAwesomeIcon icon={faCalendar} />
           <div className="ml-[0.875rem] font-medium">{time}</div>
         </div>
         <div className="capitalize font-semibold">by {by}</div>
       </div>
-      <div className="title-text">
-        <div className="mt-9">{title}</div>
+      <div className="title-text mt-5 sm:mt-9">
+        <div>{title}</div>
         <div className="capitalize">{status}</div>
       </div>
-      <div className="mt-[0.875rem] description-text">{description}</div>
-      <button className="mt-[1.875rem] flex items-center w-fit self-end">
+      <div className="mt-[0.625rem] sm:mt-[0.875rem] description-text">
+        {description}
+      </div>
+      <button className="mt-5 sm:mt-[1.875rem] flex items-center justify-center w-full sm:w-fit self-end">
         <div className="mr-2">View More</div>
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
