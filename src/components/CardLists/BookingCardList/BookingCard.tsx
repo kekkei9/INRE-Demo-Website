@@ -2,8 +2,11 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Booking } from "@src/types/booking";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
+  const router = useRouter();
+
   return (
     <div className="div-card flex flex-col shadow-[0_0_4px_rgba(0,0,0,0.3)]">
       <div className="relative aspect-[5/4]">
@@ -14,11 +17,14 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
         {description}
       </div>
       <div className="flex justify-between mt-[0.625rem] sm:mt-5 items-center">
-        <button className="flex items-center gap-2">
-          <div>Contact Us</div>
+        <button
+          className="flex items-center gap-1 px-5"
+          onClick={() => router.push("/contact")}
+        >
+          <div className="text-sm">Contact Us</div>
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
-        <div className="font-semibold">{price}</div>
+        <div className="font-semibold text-sm">{price}</div>
       </div>
     </div>
   );

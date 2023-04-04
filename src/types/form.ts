@@ -3,4 +3,5 @@ export type FormElem = {
   name: string;
   placeholder?: string;
   hint?: string;
+  children?: React.ReactNode;
 };

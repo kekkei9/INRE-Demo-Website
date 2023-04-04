@@ -3,15 +3,17 @@ import BookingCard from "./BookingCard";
 
 const BookingCardList = ({ bookingList }: { bookingList: Booking[] }) => {
   return (
-    <div className="gap-card flex flex-row flex-wrap h-[29.5rem] sm:h-[40.4375rem] overflow-hidden">
-      {bookingList.map((bookingData, index) => (
-        <div
-          className="h-[28.25rem] sm:h-[40.4375rem] w-[22.5rem] sm:w-[28.5rem]"
-          key={index}
-        >
-          <BookingCard {...bookingData} />
-        </div>
-      ))}
+    <div>
+      <div className="sm:hidden md:flex flex flex-row max-sm:flex-col gap-card items-center">
+        {bookingList.map((bookingData, index) => (
+          <BookingCard key={index} {...bookingData} />
+        ))}
+      </div>
+      <div className="hidden sm:flex md:hidden justify-center gap-card">
+        {bookingList.slice(0, 2).map((bookingData, index) => (
+          <BookingCard key={index} {...bookingData} />
+        ))}
+      </div>
     </div>
   );
 };

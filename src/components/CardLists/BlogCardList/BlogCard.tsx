@@ -36,10 +36,7 @@ const BlogCard = ({
         </div>
         <div className="capitalize font-semibold">by {by}</div>
       </div>
-      <div className="title-text mt-5 sm:mt-9">
-        <div>{title}</div>
-        <div className="capitalize">{status}</div>
-      </div>
+      <div className="title-text mt-5 sm:mt-9">{title}</div>
       <div className="mt-[0.625rem] sm:mt-[0.875rem] description-text">
         {description}
       </div>

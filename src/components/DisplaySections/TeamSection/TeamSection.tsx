@@ -6,10 +6,10 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
   return (
     <div>
       <div
-        className={`py-[1.4375rem] px-[1.6875rem] flex items-center flex-col 2xl:flex-row gap-[1.875rem] max-sm:rounded-[0.625rem]
+        className={`py-[1.4375rem] px-[1.6875rem] flex max-sm:flex-col items-center gap-[1.875rem] max-sm:rounded-[0.625rem]
       ${isInTab ? "bg-[#F2F4F6]" : "bg-[#F1F1F1]"}`}
       >
-        <div className="flex-shrink-0">
+        <div className="flex flex-1">
           <Image
             src={"/assets/home/img_2.png"}
             alt="home_1"
@@ -17,7 +17,7 @@ const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
             height={434}
           />
         </div>
-        <div className="flex flex-col gap-5 sm:gap-[2.1875rem]">
+        <div className="flex flex-col gap-5 sm:gap-[2.1875rem] flex-1 ">
           <div className="text-[2.125rem] font-bold">Who We Are</div>
           <div className="description-text">
             The Indian real estate sector is resilient despite global headwinds.

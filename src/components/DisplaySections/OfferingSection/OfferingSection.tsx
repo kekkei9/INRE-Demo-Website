@@ -15,9 +15,7 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
 
   return (
     <div
-      className={`div-section flex flex-col items-center ${
-        isInTab && "py-[1.875rem] sm:py-[4.375rem]"
-      }`}
+      className={`div-section  ${isInTab && "py-[1.875rem] sm:py-[4.375rem]"}`}
     >
       <BeginSection label="Our Offerings" />
       {!isInTab && (
