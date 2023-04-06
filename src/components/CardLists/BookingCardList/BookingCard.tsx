@@ -8,7 +8,7 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
   const router = useRouter();
 
   return (
-    <div className="div-card flex flex-col shadow-[0_0_4px_rgba(0,0,0,0.3)]">
+    <div className="div-card flex flex-col shadow-[0_0_4px_rgba(0,0,0,0.3)] hover:shadow-[0_0_80px_rgba(0,0,0,0.2)]">
       <div className="relative aspect-[5/4]">
         <Image src={imgSrc} alt="booking img" fill className="object-contain" />
       </div>

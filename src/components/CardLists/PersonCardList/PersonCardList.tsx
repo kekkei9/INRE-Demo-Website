@@ -4,7 +4,7 @@ import PersonCard from "./PersonCard";
 const PersonCardList = ({ personList }: { personList: Person[] }) => {
   return (
     <div>
-      <div className="sm:hidden md:flex flex flex-row max-sm:flex-col gap-card justify-center">
+      <div className="sm:hidden md:flex flex flex-row max-sm:flex-col gap-card justify-center items-center">
         {personList.map((person, index) => (
           <div className="w-[22.5rem] sm:w-[19rem]" key={index}>
             <PersonCard {...person} />

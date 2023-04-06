@@ -1,0 +1,13 @@
+.react-markdown {
+  // some root styles here
+  * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.react-markdown ol {
+  list-style-type: decimal;
+  li {
+    margin-left: 1.5rem;
+  }
+}
