@@ -15,7 +15,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { BlogCard } from "@components/CardLists/BlogCard";
-import { blogList } from "@components/HomePage/ThirdSection";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import styles from "@styles/markdown-styles.module.scss";
@@ -34,6 +33,11 @@ const Blog = () => {
 
   const { data: blogData } = useSWR<Blog>({
     url: `/blogs/${blogId}`,
+    args: {},
+  });
+
+  const { data: blogList } = useSWR<Blog[]>({
+    url: "/blogs",
     args: {},
   });
 
@@ -131,9 +135,14 @@ const Blog = () => {
       </div>
       <div className="div-section flex flex-col gap-5 bg-[#CCD3DC] sm:bg-[#F2F4F6]">
         <BeginSection label="You May Also Like This" />
-        <CardList dataList={blogList}>
-          <BlogCard />
-        </CardList>
+        <div>
+          <CardList
+            dataList={blogList?.filter((blog) => blog.id !== blogId)}
+            numOfSlides={2}
+          >
+            <BlogCard />
+          </CardList>
+        </div>
       </div>
     </div>
   );

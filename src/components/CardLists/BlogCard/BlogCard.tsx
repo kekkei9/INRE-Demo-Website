@@ -29,7 +29,9 @@ const BlogCard = ({ item }: { item?: Blog }) => {
       </div>
       <div className="title-text mt-5 sm:mt-9">{item?.title}</div>
       <div className="mt-[0.625rem] sm:mt-[0.875rem] description-text">
-        {item?.description}
+        “Lorem ipsum dolor sit amet consectetur. Aliquam non laoreet scelerisque
+        ullamcorper. Pulvinar sed dictum ornare mi eget montes laoreet enim. Ut
+        morbi...
       </div>
       <button
         className="mt-5 sm:mt-[1.875rem] flex items-center justify-center w-full sm:w-fit self-end"
