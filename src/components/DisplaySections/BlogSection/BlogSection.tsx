@@ -1,6 +1,7 @@
-import { BlogCardList } from "@components/CardLists/BlogCardList";
 import Image from "next/image";
 import { blogList } from "../../HomePage/ThirdSection";
+import { CardList } from "@components/CardLists/CardList";
+import { BlogCard } from "@components/CardLists/BlogCard";
 
 const BlogSection = () => (
   <div className="pb-[3.4375rem]">
@@ -28,7 +29,9 @@ const BlogSection = () => (
       </div>
     </div>
     <div className="div-section">
-      <BlogCardList blogList={blogList.slice(0, 2)} />
+      <CardList dataList={blogList}>
+        <BlogCard />
+      </CardList>
     </div>
   </div>
 );

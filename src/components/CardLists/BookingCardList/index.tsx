@@ -1,1 +1,1 @@
-export { default as BookingCardList } from "./BookingCardList";
+export { default as BookingCard } from "./BookingCard";

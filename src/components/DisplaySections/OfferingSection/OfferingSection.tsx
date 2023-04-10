@@ -1,12 +1,12 @@
 import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { CustomTabList } from "@components/CustomTabList";
-import { PersonCardList } from "@components/CardLists/PersonCardList";
 import { NavData } from "@context/NavData";
 import { Person } from "@src/types/person";
 import { useContext } from "react";
 import useSWR from "swr";
 import { OfferingTab } from "@src/types/tab";
-import { BookingCardList } from "@components/CardLists/BookingCardList";
+import { CardList } from "@components/CardLists/CardList";
+import { BookingCard } from "@components/CardLists/BookingCardList";
 
 interface IOfferingSectionTab {
   isInTab?: boolean;
@@ -46,7 +46,15 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
               key: tab.id,
               label: tab.label,
               children: (
-                <BookingCardList bookingList={tab.itemList} key={tab.id} />
+                <div key={tab.id}>
+                  <CardList
+                    dataList={tab.itemList}
+                    key={tab.id}
+                    numOfSlides={isInTab ? 2 : 3}
+                  >
+                    <BookingCard />
+                  </CardList>
+                </div>
               ),
             })) || []
           }

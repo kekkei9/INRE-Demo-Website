@@ -1,6 +1,7 @@
 import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { Blog } from "@src/types/blog";
-import { BlogCardList } from "@components/CardLists/BlogCardList";
+import { CardList } from "@components/CardLists/CardList";
+import { BlogCard } from "@components/CardLists/BlogCard";
 
 export const blogList: Blog[] = [
   {
@@ -43,7 +44,9 @@ const ThirdSection = () => (
     <div className="mb-9">
       <BeginSection label="Blogs" />
     </div>
-    <BlogCardList blogList={blogList} />
+    <CardList dataList={blogList}>
+      <BlogCard />
+    </CardList>
   </div>
 );
 

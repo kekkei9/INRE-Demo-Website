@@ -3,7 +3,7 @@ import ContactSection from "@components/DisplaySections/ContactSection/ContactSe
 import { FirstSection, ThirdSection } from "@components/HomePage";
 
 import { BeginSection } from "@components/DisplaySections/BeginSection";
-import { PersonCardList } from "@components/CardLists/PersonCardList";
+import { PersonCardList } from "@components/CardLists/PersonCard";
 
 import Head from "next/head";
 import { Person } from "@src/types/person";

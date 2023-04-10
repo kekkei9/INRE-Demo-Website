@@ -14,13 +14,13 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { BeginSection } from "@components/DisplaySections/BeginSection";
-import BlogCard from "@components/CardLists/BlogCardList/BlogCard";
+import { BlogCard } from "@components/CardLists/BlogCard";
 import { blogList } from "@components/HomePage/ThirdSection";
-import { BlogCardList } from "@components/CardLists/BlogCardList";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import styles from "@styles/markdown-styles.module.scss";
 import useSWR from "swr";
+import { CardList } from "@components/CardLists/CardList";
 
 export type Blog = {
   id: string;
@@ -131,12 +131,9 @@ const Blog = () => {
       </div>
       <div className="div-section flex flex-col gap-5 bg-[#CCD3DC] sm:bg-[#F2F4F6]">
         <BeginSection label="You May Also Like This" />
-        <div className="block sm:hidden">
-          <BlogCard {...blogList[0]} />
-        </div>
-        <div className="hidden sm:block">
-          <BlogCardList blogList={blogList} />
-        </div>
+        <CardList dataList={blogList}>
+          <BlogCard />
+        </CardList>
       </div>
     </div>
   );

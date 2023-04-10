@@ -1,4 +1,6 @@
-import { PersonCardList } from "@components/CardLists/PersonCardList";
+import BlogCard from "@components/CardLists/BlogCard/BlogCard";
+import { CardList } from "@components/CardLists/CardList";
+import { PersonCard } from "@components/CardLists/PersonCard";
 import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { ContactSection } from "@components/DisplaySections/ContactSection";
 import { OfferingSection } from "@components/DisplaySections/OfferingSection";
@@ -23,7 +25,9 @@ const HomePage = () => {
         <OfferingSection />
         <BeginSection label="Our Team Members" />
         <div className="div-section">
-          <PersonCardList personList={teamMembers || []} />
+          <CardList dataList={teamMembers}>
+            <PersonCard />
+          </CardList>
         </div>
         <ThirdSection />
         <ContactSection />
