@@ -45,9 +45,12 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
             offeringTabs?.map((tab) => ({
               key: tab.id,
               label: tab.label,
-              children: <BookingCardList bookingList={tab.itemList} />,
+              children: (
+                <BookingCardList bookingList={tab.itemList} key={tab.id} />
+              ),
             })) || []
           }
+          initialTab={isInTab ? "1" : "2"}
         />
       </div>
     </div>

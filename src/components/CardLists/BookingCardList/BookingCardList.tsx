@@ -2,7 +2,13 @@ import { Booking } from "@src/types/booking";
 import BookingCard from "./BookingCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const BookingCardList = ({ bookingList }: { bookingList: Booking[] }) => {
+const BookingCardList = ({
+  bookingList,
+  key,
+}: {
+  bookingList: Booking[];
+  key: string | number;
+}) => {
   return (
     <div className="flex gap-card items-center">
       <Swiper
@@ -14,6 +20,7 @@ const BookingCardList = ({ bookingList }: { bookingList: Booking[] }) => {
         }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        key={key}
       >
         {bookingList.map((bookingData, index) => (
           <SwiperSlide key={index}>

@@ -9,11 +9,11 @@ const BookingCard = ({ imgSrc, title, description, price }: Booking) => {
 
   return (
     <div className="div-card flex flex-col shadow-[0_0_4px_rgba(0,0,0,0.3)] hover:shadow-[0_0_80px_rgba(0,0,0,0.2)]">
-      <div className="relative aspect-[5/4]">
+      <div className="relative aspect-[2/1]">
         <Image src={imgSrc} alt="booking img" fill className="object-contain" />
       </div>
       <div className="mt-[0.625rem] sm:mt-[1.875rem] title-text">{title}</div>
-      <div className="mt-[0.625rem] sm:mt-5 description-text">
+      <div className="mt-[0.625rem] sm:mt-5 description-text line-clamp-3">
         {description}
       </div>
       <div className="flex justify-between mt-[0.625rem] sm:mt-5 items-center">

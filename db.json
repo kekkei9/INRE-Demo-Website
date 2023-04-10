@@ -46,14 +46,14 @@
       "itemList": [
         {
           "id": "1",
-          "imgSrc": "/assets/home/booking/img_1.png",
+          "imgSrc": "/assets/home/booking/1/img_1.png",
           "title": "Background verification",
           "description": "It is observed that people invest more than 10 years of savings in real estate. Hence, they are automatically conscious of the developer brand, past track record of the project delivered, the project progress, and the financial acumen of the developer. This is especially significant in the case of primary transactions. Here, InRe brings the proposition of “ Background verification of developers”. Based on our experience and industry...",
           "price": "INR 3000 / Project"
         },
         {
           "id": "2",
-          "imgSrc": "/assets/home/booking/img_2.png",
+          "imgSrc": "/assets/home/booking/1/img_2.png",
           "title": "Pre-booking Virtual site visit",
           "description": "This requires multiple visits in multiple places deferring the buying process by more than 45 days. Also, it is difficult for people to compare two properties just based on visits. Here, InRe brings the proposition of “ Virtual visits at Pre- Booking stage”. We help the customer to visit the site with the help of AI enabled UAVs. This can replace the physical visit to the maximum possible extent by providing the live streaming feature. It also ..."
         }
@@ -64,20 +64,40 @@
       "label": "Post-Booking & Pre-Registration",
       "itemList": [
         {
-          "imgSrc": "/assets/home/booking/img_1.png",
-          "title": "Background verification",
-          "description": "Assuring your capital is in safe hands, we provide detailed verification reports of the project and developer. These are customized and detailed...",
-          "price": "INR 3000 / Project"
+          "id": "1",
+          "imgSrc": "/assets/home/booking/2/img_1.png",
+          "title": "Title Diligence",
+          "description": "Title diligence is normally seen as an activity that requires the serious involvement of experienced legal consulates as the entire premise of ownership lies in title diligence and various compliances with housing norms. This activity also requires a lot of coordination between the legal consulates and developers which is a time-consuming affair without understanding the context, We using Ai enabled platform has eased out the process..."
         },
         {
-          "imgSrc": "/assets/home/booking/img_2.png",
-          "title": "Virtual site visit",
-          "description": "It becomes imperative to observe your apartment or plot very closely before paying the booking amount. We are here to assist with an AI-enabled UAV..."
+          "id": "2",
+          "imgSrc": "/assets/home/booking/2/img_2.png",
+          "title": "Sustainable Marketability Of Title",
+          "description": "Real estate is still the most informal industry in India with certain malpractices. It is frequently observed that sellers create multiple rights on the same property which makes the purchase experience unpleasant. Here, we bring the proposition of regular checks on the government records like the encumbrance certificate of the particular property. This is further supplemented with a legal opinion report by the expert. This ensures that..."
         },
         {
-          "imgSrc": "/assets/home/booking/img_2.png",
-          "title": "Title diligence",
-          "description": "Due diligence is necessary to prevent real estate malpractices which have contributed to more than 20% of the civil cases in India. We have a panel of..."
+          "id": "3",
+          "imgSrc": "/assets/home/booking/2/img_3.png",
+          "title": "Virtual Site Visit",
+          "description": "After booking the property, monitoring is required to ensure that the developer is sticking to the development plan. Here, InRe brings the proposition of “ Virtual visits at Post- Booking stage”. We help the customer to inspect the site with the help of AI-enabled UAVs. By covering the aerial view of the project, the overall development of the project at the maximum possible heights could be observed. This can replace or complement..."
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/home/booking/2/img_4.png",
+          "title": "Hassle Free Registration",
+          "description": "The registration process involves visiting registrar offices and coordinating with lawyers, brokers, and sellers. Documents that are presented in the registrar's offices seem deficient or incorrect in almost 50% of the cases and need to be rectified very soon adding to hassles and delays. It becomes even more difficult when you are out of the city and just visiting for the registration process. To prevent these unnecessary travel times and ..."
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/home/booking/2/img_5.png",
+          "title": "TDS & Capital Gain",
+          "description": "Adhering to compliance is strictly required in the process of property purchase. As per the Income tax Act 1956, if the property value is more than 50 Lakhs then TDS @ 1% needs to be deducted by the buyer out of the sale consideration and the same needs to be paid on behalf of the seller to the Central Government of India. Failing to deduct TDS and pay to the government of India within the due date, the applicable monthly interest rate is..."
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/home/booking/2/img_6.png",
+          "title": "Pre-Delivery Inspection",
+          "description": "The most difficult task during the property buying process, especially in residential units like apartments and villas is to measure the quality of work done by the developer/ contractor/ third party and to identify the flaws which protect the interest of the buyer before taking the delivery of the house. It is the primary responsibility of the developer/ contractor/ third party to fix those issues before delivery. But, It is frequently seen..."
         }
       ]
     },
@@ -86,20 +106,28 @@
       "label": "Post-Registration",
       "itemList": [
         {
-          "imgSrc": "/assets/home/booking/img_1.png",
-          "title": "Background verification",
-          "description": "Assuring your capital is in safe hands, we provide detailed verification reports of the project and developer. These are customized and detailed...",
-          "price": "INR 3000 / Project"
+          "id": "1",
+          "imgSrc": "/assets/home/booking/3/img_1.png",
+          "title": "Virtual Site Visit",
+          "description": "It becomes imperative to observe your apartment or plot very closely before paying the booking amount. We are here to assist with an AI-enabled UAV system. You just need to choose your convenient date and hour slots. We will provide both live streaming and..."
         },
         {
-          "imgSrc": "/assets/home/booking/img_2.png",
-          "title": "Virtual site visit",
-          "description": "It becomes imperative to observe your apartment or plot very closely before paying the booking amount. We are here to assist with an AI-enabled UAV..."
+          "id": "2",
+          "imgSrc": "/assets/home/booking/3/img_2.png",
+          "title": "Khata Transfer",
+          "description": "Various processes like Khata transfer and Bescom transfer after registration consume your precious time and money. Let us help you with those at nominal costs ensuring fast and transparent delivery."
         },
         {
-          "imgSrc": "/assets/home/booking/img_2.png",
-          "title": "Title diligence",
-          "description": "Due diligence is necessary to prevent real estate malpractices which have contributed to more than 20% of the civil cases in India. We have a panel of..."
+          "id": "3",
+          "imgSrc": "/assets/home/booking/3/img_3.png",
+          "title": "BESCOM Transfer",
+          "description": "Various processes like Khata transfer and Bescom transfer after registration consume your precious time and money. Let us help you with those at nominal costs ensuring fast and transparent delivery."
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/home/booking/3/img_4.png",
+          "title": "Property Tax Transfer",
+          "description": "Various processes like Khata transfer and Bescom transfer after registration consume your precious time and money. Let us help you with those at nominal costs ensuring fast and transparent delivery."
         }
       ]
     }
