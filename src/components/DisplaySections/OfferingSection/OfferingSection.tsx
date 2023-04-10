@@ -1,20 +1,18 @@
 import { BeginSection } from "@components/DisplaySections/BeginSection";
 import { CustomTabList } from "@components/CustomTabList";
-import { NavData } from "@context/NavData";
 import { Person } from "@src/types/person";
 import { useContext } from "react";
 import useSWR from "swr";
 import { OfferingTab } from "@src/types/tab";
 import { CardList } from "@components/CardLists/CardList";
 import { BookingCard } from "@components/CardLists/BookingCardList";
+import Link from "next/link";
 
 interface IOfferingSectionTab {
   isInTab?: boolean;
 }
 
 const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
-  const { setNav } = useContext(NavData);
-
   const { data: offeringTabs } = useSWR<OfferingTab[]>({
     url: "/offeringTabs",
     args: {},
@@ -31,12 +29,12 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
             This whole purchase journey can be divided into three stages. For
             more details,{" "}
           </span>
-          <a
+          <Link
+            href="/offerings"
             className="text-text-link-primary cursor-pointer font-bold"
-            onClick={() => setNav("offerings")}
           >
             Click Here
-          </a>
+          </Link>
         </div>
       )}
       <div className="mt-[0.625rem] sm:mt-[2.9375rem]">
