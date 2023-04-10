@@ -1,1 +1,2 @@
-export { default as HomePage } from "./HomePage";
+export { default as FirstSection } from "./FirstSection";
+export { default as ThirdSection } from "./ThirdSection";

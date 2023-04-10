@@ -4,7 +4,9 @@ import { PersonCardList } from "@components/CardLists/PersonCardList";
 import { NavData } from "@context/NavData";
 import { Person } from "@src/types/person";
 import { useContext } from "react";
-import { tabList } from "./tabList";
+import useSWR from "swr";
+import { OfferingTab } from "@src/types/tab";
+import { BookingCardList } from "@components/CardLists/BookingCardList";
 
 interface IOfferingSectionTab {
   isInTab?: boolean;
@@ -12,6 +14,11 @@ interface IOfferingSectionTab {
 
 const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
   const { setNav } = useContext(NavData);
+
+  const { data: offeringTabs } = useSWR<OfferingTab[]>({
+    url: "/offeringTabs",
+    args: {},
+  });
 
   return (
     <div
@@ -33,7 +40,15 @@ const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
         </div>
       )}
       <div className="mt-[0.625rem] sm:mt-[2.9375rem]">
-        <CustomTabList tabList={tabList} />
+        <CustomTabList
+          tabList={
+            offeringTabs?.map((tab) => ({
+              key: tab.id,
+              label: tab.label,
+              children: <BookingCardList bookingList={tab.itemList} />,
+            })) || []
+          }
+        />
       </div>
     </div>
   );

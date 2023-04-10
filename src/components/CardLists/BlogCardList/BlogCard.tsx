@@ -15,10 +15,7 @@ const BlogCard = ({
 }: Blog) => {
   const router = useRouter();
   return (
-    <div
-      className="div-card flex flex-col bg-white deep-shadow hover:border"
-      onClick={() => router.push(`/blogs/${id}`)}
-    >
+    <div className="div-card flex flex-col bg-white deep-shadow">
       <div>
         <Image
           src={imgSrc}
@@ -40,7 +37,10 @@ const BlogCard = ({
       <div className="mt-[0.625rem] sm:mt-[0.875rem] description-text">
         {description}
       </div>
-      <button className="mt-5 sm:mt-[1.875rem] flex items-center justify-center w-full sm:w-fit self-end">
+      <button
+        className="mt-5 sm:mt-[1.875rem] flex items-center justify-center w-full sm:w-fit self-end"
+        onClick={() => router.push(`/blogs/${id}`)}
+      >
         <div className="mr-2">View More</div>
         <FontAwesomeIcon icon={faArrowRight} />
       </button>

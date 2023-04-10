@@ -8,7 +8,9 @@ interface ICustomTabListProps {
 }
 
 const CustomTabList = ({ tabList, initialTab }: ICustomTabListProps) => {
-  const [currentTab, setCurrentTab] = useState(initialTab || tabList[0].key);
+  const [currentTab, setCurrentTab] = useState(
+    initialTab || (tabList.length ? tabList[0].key : "0")
+  );
 
   return (
     <div className="w-full">

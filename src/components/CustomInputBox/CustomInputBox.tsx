@@ -10,7 +10,6 @@ const CustomInputBox = ({
       <div className="absolute bg-white left-6 top-[-0.84375rem] px-[0.375rem] z-10">
         {label}
       </div>
-
       {children}
       <div className="opacity-40">{hint}</div>
     </div>
