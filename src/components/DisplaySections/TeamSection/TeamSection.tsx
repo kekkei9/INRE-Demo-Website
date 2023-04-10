@@ -1,8 +1,12 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const TeamSection = ({ isInTab }: { isInTab?: boolean }) => {
+const TeamSection = () => {
+  const router = useRouter();
+  const isInTab = router.asPath.includes("/team");
+
   return (
     <div>
       <div

@@ -11,7 +11,7 @@ const TeamPage = () => {
   return (
     <div>
       <div className="bg-[#E6EAEE] div-section">
-        <TeamSection isInTab />
+        <TeamSection />
       </div>
       <div className="px-[0.9375rem] py-5 sm:px-[14.25rem] sm:py-[2.1875rem] flex flex-col gap-5 sm:gap-[2.1875rem]">
         {teamMembers?.map((person, index) => (

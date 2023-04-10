@@ -1,7 +1,7 @@
 import { ContactSection } from "@components/DisplaySections/ContactSection";
 
 const ContactPage = () => {
-  return <ContactSection isInTab />;
+  return <ContactSection />;
 };
 
 export default ContactPage;

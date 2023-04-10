@@ -1,7 +1,7 @@
 import { OfferingSection } from "@components/DisplaySections/OfferingSection";
 
 const OfferingsPage = () => {
-  return <OfferingSection isInTab />;
+  return <OfferingSection />;
 };
 
 export default OfferingsPage;

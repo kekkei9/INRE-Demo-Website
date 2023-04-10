@@ -7,12 +7,12 @@ import { OfferingTab } from "@src/types/tab";
 import { CardList } from "@components/CardLists/CardList";
 import { BookingCard } from "@components/CardLists/BookingCardList";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-interface IOfferingSectionTab {
-  isInTab?: boolean;
-}
+const OfferingSection = () => {
+  const router = useRouter();
+  const isInTab = router.asPath.includes("/offerings");
 
-const OfferingSection = ({ isInTab }: IOfferingSectionTab) => {
   const { data: offeringTabs } = useSWR<OfferingTab[]>({
     url: "/offeringTabs",
     args: {},
