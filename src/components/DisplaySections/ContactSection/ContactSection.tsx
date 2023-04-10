@@ -72,8 +72,8 @@ const formList: FormElem[] = [
 
 const ContactSection = ({ isInTab }: { isInTab?: boolean }) => (
   <div
-    className={`div-section ${
-      isInTab ? "py-[1.875rem] sm:py-[4.375rem]" : "pb-12"
+    className={`div-section max-sm:px-[1.25rem] ${
+      isInTab ? "py-[1.875rem] sm:py-[4.375rem]" : "sm:pb-12"
     }`}
   >
     <div
@@ -103,7 +103,9 @@ const ContactSection = ({ isInTab }: { isInTab?: boolean }) => (
           })}
         </div>
         <div className="mt-7">
-          <button className="btn-primary w-[17.875rem]">Submit</button>
+          <button className="btn-primary w-[21.875rem] sm:w-[17.875rem]">
+            Submit
+          </button>
         </div>
       </div>
       <div className="flex-[3_3_0%]">

@@ -6,7 +6,7 @@ const CustomInputBox = ({
   children,
 }: FormElem & { children: React.ReactNode }) => {
   return (
-    <div className="font-medium w-[17.875rem] relative">
+    <div className="font-medium w-[21.875rem] sm:w-[17.875rem] relative">
       <div className="absolute bg-white left-6 top-[-0.84375rem] px-[0.375rem] z-10">
         {label}
       </div>

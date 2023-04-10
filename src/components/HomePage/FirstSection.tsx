@@ -33,7 +33,7 @@ const FirstSection = () => {
           />
         </div>
       </div>
-      <div className="max-sm:div-section pb-0">
+      <div className="max-sm:div-section !pb-0">
         <TeamSection />
       </div>
     </div>
