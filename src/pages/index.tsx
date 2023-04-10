@@ -3,11 +3,12 @@ import ContactSection from "@components/DisplaySections/ContactSection/ContactSe
 import { FirstSection, ThirdSection } from "@components/HomePage";
 
 import { BeginSection } from "@components/DisplaySections/BeginSection";
-import { PersonCardList } from "@components/CardLists/PersonCard";
+import { PersonCard } from "@components/CardLists/PersonCard";
 
 import Head from "next/head";
 import { Person } from "@src/types/person";
 import useSWR from "swr";
+import { CardList } from "@components/CardLists/CardList";
 
 export default function Home() {
   const { data: teamMembers } = useSWR<Person[]>({
@@ -25,7 +26,9 @@ export default function Home() {
         <OfferingSection />
         <BeginSection label="Our Team Members" />
         <div className="div-section">
-          <PersonCardList personList={teamMembers || []} />
+          <CardList dataList={teamMembers}>
+            <PersonCard />
+          </CardList>
         </div>
         <ThirdSection />
         <ContactSection />

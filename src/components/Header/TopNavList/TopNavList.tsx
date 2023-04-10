@@ -1,4 +1,3 @@
-import { NavData } from "@context/NavData";
 import { Nav } from "@src/types/nav";
 import { Dispatch, SetStateAction, useContext } from "react";
 import TopNav from "./TopNav";
